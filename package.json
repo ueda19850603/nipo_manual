@@ -1,0 +1,12 @@
+{
+  "name": "nipo_manual",
+  "version": "0.0.1",
+  "description": "クラウド日報Nipoの操作ガイド",
+  "productName": "Nipo Guide",
+  "author": "sandbox co.,ltd <nipo.cloud@gmail.com>",
+  "private": false,
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
