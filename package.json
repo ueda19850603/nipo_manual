@@ -6,7 +6,11 @@
   "author": "sandbox co.,ltd <nipo.cloud@gmail.com>",
   "private": false,
   "scripts": {
+    "start": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev docs",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

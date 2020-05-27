@@ -5,21 +5,11 @@ meta:
     content: 説明
 ---
 
-## みだしefefe
-なかみ
----
-sidebar: auto
----
-# Title
+## タイトル 1
 
-## Heading 1
+### サブタイトル 1-1
 
-見出し1の内容
+### サブタイトル 1-2
 
-## Heading 2
-
-見出し2の内容
-
-## Heading 3
-
-見出し3の内容
+## タイトル 2
+[minimalistic static site generator](./about/about)) 
