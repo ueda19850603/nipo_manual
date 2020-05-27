@@ -6,6 +6,14 @@ module.exports = {
       lang: 'ja'
     }
   },
+  plugins: [
+    ['@vuepress/back-to-top', true],
+    ['@vuepress/last-updated', true],
+    ['@vuepress/medium-zoom', true],
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }]
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },

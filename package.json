@@ -7,10 +7,17 @@
   "private": false,
   "scripts": {
     "start": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev docs",
-    "docs:dev": "vuepress dev docs",
+    "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@vuepress/plugin-back-to-top": "^1.5.0",
+    "@vuepress/plugin-medium-zoom": "^1.5.0",
+    "nodemon": "^2.0.4",
+    "vuepress": "^1.5.0",
+    "watchpack": "^1.6.1"
+  },
+  "resolutions": {
+    "watchpack": "1.6.1"
   }
 }
