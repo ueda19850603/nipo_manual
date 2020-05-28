@@ -29,22 +29,48 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about/' },
-      { text: 'Blog', link: 'https://www.nxworld.net/' }
+      { text: '操作ガイド', link: '/manual/quickstart' },
+      { text: 'FAQ', link: '/faq/' }
     ],
-    sidebar: [
-      '/',
-      ['/quickstart', '初めての方へ'],
-      ['/about/', 'あばうとおお'],
-      ['/faq/', 'よくある質問と答え'],
-      ['/errors/', 'トラブルシューティング'],
-      {
-        title: 'Group 1',
-        children: [
-          '/about/', // ファイル名がREADME.mdやindex.mdの場合省略できます。
-          '/about/about' // .mdを省略できます。
-        ]
-      }
-    ],
+    sidebar: {
+      '/about/': [
+        {
+          title: 'taitoru',
+          children: [
+            '/about/'
+          ]
+        }
+      ],
+      '/faq/': [
+        {
+          title: 'FAQタイトル',
+          children: [
+            ['/faq/', 'よくある質問と答え edit'],
+          ]
+        },
+        {
+          title: 'トラブルシューティング',
+          children: [
+            ['/faq/truble', 'トラブルについて']
+          ]
+        }
+      ],
+      '/manual/': [
+        {
+          title: '初めての方へ',
+          children: [
+            ['/manual/quickstart', 'クイックスタートガイド']
+          ]
+        },
+        {
+          title: '一般操作ガイド',
+          children: [
+            ['/manual/quickstart', 'クイックスタートガイド']
+          ]
+        }
+      ]
+    },
+
     sidebarDepth: 1
   }
 }

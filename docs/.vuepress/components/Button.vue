@@ -1,6 +1,25 @@
 <template>
-  <a href="#" class="btn">Button</a>
+  <a :href="url" class="btn">{{ label }}</a>
 </template>
+
+<script>
+
+export default {
+  props: {
+    url: {
+      type: String,
+      required: true
+    },
+    label: {
+      type: String,
+      required: false,
+      default: 'ボタン'
+    }
+  },
+  methods: {
+  }
+}
+</script>
 
 <style>
 .btn {
