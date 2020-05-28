@@ -30,6 +30,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about/' },
       { text: '操作ガイド', link: '/manual/quickstart' },
+      { text: 'セキュリティ', link: '/security/' },
       { text: 'FAQ', link: '/faq/' }
     ],
     sidebar: {
@@ -52,6 +53,32 @@ module.exports = {
           title: 'トラブルシューティング',
           children: [
             ['/faq/truble', 'トラブルについて']
+          ]
+        }
+      ],
+      '/security/': [
+        {
+          title: 'セキュリティについて',
+          path: '/security/'
+        },
+        {
+          title: 'Nipoのセキュリティ対策',
+          children: [
+            ['/security/security', 'セキュリティ対策']
+          ]
+        },
+        {
+          title: 'セキュリティFAQ',
+          children: [
+            ['/security/faq', 'セキュリティに対するよくある質問と答え'],
+            ['/security/guideline', 'セキュリティガイドライン']
+          ]
+        },
+        {
+          title: 'Nipoを安全に使うために',
+          children: [
+            ['/security/guideline', 'クラウドシステムを安全に使う'],
+            ['/security/guideline2', 'Nipoを安全に使う'],
           ]
         }
       ],
