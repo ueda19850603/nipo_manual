@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/',
   title: 'クラウド日報Nipo',
   description: 'Just playing around',
   cache: true,
