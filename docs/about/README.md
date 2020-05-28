@@ -10,6 +10,7 @@
 This is a tip
 :::
 
+## about直下readme.md のｈ２
 ::: warning
 This is a warning
 :::
@@ -21,3 +22,10 @@ This is a dangerous warning
 ::: details
 This is a details block, which does not work in IE / Edge
 :::
+
+![aaa](/test.png)
+画像
+
+<Button />
+
+### Badge <Badge text="beta" type="warning" /> <Badge text="default theme"/>
