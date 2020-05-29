@@ -26,6 +26,5 @@ This is a details block, which does not work in IE / Edge
 ![aaa](/test.png)
 画像
 
-<Button />
 
 ### Badge <Badge text="beta" type="warning" /> <Badge text="default theme"/>

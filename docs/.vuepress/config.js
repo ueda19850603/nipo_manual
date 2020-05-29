@@ -29,42 +29,64 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about/' },
+      { text: '有料と無料の違い', link: '/price/' },
       { text: '操作ガイド', link: '/manual/quickstart' },
       { text: 'セキュリティ', link: '/security/' },
+      { text: '規約等', link: '/rule/' },
       { text: 'FAQ', link: '/faq/' }
     ],
     sidebar: {
+      '/price/': [
+        {
+          title: '無料と有料の違い',
+          children: [
+            ['', '費用トップ']
+          ]
+        },
+        {
+          title: 'GOLD PLANに加入する',
+          children: [
+            ['/price/invoice', '請求書払いでGOLD PLANに加入する'],
+            ['/price/credit', 'クレジットカードでGOLD PLANに加入する'],
+          ]
+        },
+        {
+          title: 'GOLD PLANを更新・変更する',
+          children: [
+            ['/price/invoice', '請求書払いでGOLD PLANに加入する'],
+          ]
+        },
+        {
+          title: 'GOLD PLANを辞める',
+          children: [
+            ['/price/invoice', '請求書払いでGOLD PLANに加入する'],
+          ]
+        }
+      ],
       '/about/': [
         {
           title: 'taitoru',
           children: [
-            '/about/'
+            ['/about/about', 'あばうと']
           ]
         }
       ],
-      '/faq/': [
+      '/rule/': [
         {
-          title: 'FAQタイトル',
+          title: 'おやくそくごと',
           children: [
-            ['/faq/', 'よくある質問と答え edit'],
-          ]
-        },
-        {
-          title: 'トラブルシューティング',
-          children: [
-            ['/faq/truble', 'トラブルについて']
+            ['/rule/agree', '利用規約'],
+            ['/rule/privacy', 'プライバシーポリシー'],
+            ['/rule/business-deal', '特定商取引法に基づく表記'],
           ]
         }
       ],
       '/security/': [
         {
           title: 'セキュリティについて',
-          path: '/security/'
-        },
-        {
-          title: 'Nipoのセキュリティ対策',
           children: [
-            ['/security/security', 'セキュリティ対策']
+            ['/security/', 'readme'],
+            ['/security/security', 'Nipoのセキュリティ対策'],
           ]
         },
         {
@@ -95,8 +117,27 @@ module.exports = {
             ['/manual/quickstart', 'クイックスタートガイド']
           ]
         }
+      ],
+      '/faq/': [
+        {
+          title: 'FAQタイトル',
+          children: [
+            ['/faq/', 'よくある質問と答え edit'],
+          ]
+        },
+        {
+          title: 'トラブルシューティング',
+          children: [
+            ['/faq/truble', 'トラブルについて']
+          ]
+        }
+      ],
+      // fallback
+      '/': [
+        '/'
       ]
     },
+
 
     sidebarDepth: 1
   }
