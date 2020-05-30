@@ -46,20 +46,34 @@ module.exports = {
         {
           title: 'GOLD PLANに加入する',
           children: [
-            ['/price/invoice', '請求書払いでGOLD PLANに加入する'],
-            ['/price/credit', 'クレジットカードでGOLD PLANに加入する'],
+            ['/price/invoice', '請求書払い'],
+            ['/price/credit', 'クレジットカード'],
           ]
         },
         {
           title: 'GOLD PLANを更新・変更する',
           children: [
-            ['/price/invoice', '請求書払いでGOLD PLANに加入する'],
+            ['/price/credit_continue', 'GOLDPLANの更新(クレカ)'],
+            ['/price/invoice_continue', 'GOLDPLANの更新(請求書)'],
           ]
         },
         {
           title: 'GOLD PLANを辞める',
           children: [
-            ['/price/invoice', '請求書払いでGOLD PLANに加入する'],
+            ['/price/credit_cancel', 'GOLD PLANの解約(クレカ)'],
+            ['/price/invoice_cancel', 'GOLD PLANの解約(請求書)'],
+            ['/price/cancel', '解約後の影響について'],
+          ]
+        },
+        {
+          title: 'その他',
+          children: [
+            ['/price/goldplan_trial', 'GOLD PLANの試用'],
+            ['/price/limit_break', '大人数で使うときのコツ'],
+            ['/price/search_unlimit', '全文検索の制限解除について'],
+            ['/price/timecard', 'タイムカードのオプション（売り切り）'],
+            ['/price/penalty', '代金未払い時の対応（本当はこんな記事書きたくありません）'],
+
           ]
         }
       ],
@@ -115,6 +129,29 @@ module.exports = {
           title: '一般操作ガイド',
           children: [
             ['/manual/quickstart', 'クイックスタートガイド']
+          ]
+        },
+        {
+          title: 'テンプレートについて',
+          children: [
+            ['/manual/template/text', '【パーツ】1行テキスト'],
+            ['/manual/template/zip', '【パーツ】郵便番号'],
+            ['/manual/template/math', '【パーツ】数値'],
+            ['/manual/template/textarea', '【パーツ】複数行テキスト'],
+            ['/manual/template/date', '【パーツ】日付'],
+            ['/manual/template/time', '【パーツ】時刻'],
+            ['/manual/template/timecard', '【パーツ】タイムカード'],
+            ['/manual/template/select1', '【パーツ】選択肢（単答)'],
+            ['/manual/template/select2', '【パーツ】選択肢（複答）'],
+            ['/manual/template/dictionaly', '【パーツ】語録'],
+            ['/manual/template/checkbox', '【パーツ】チェックボックス'],
+            ['/manual/template/rate', '【パーツ】レート'],
+            ['/manual/template/slide', '【パーツ】スライダー'],
+            ['/manual/template/range', '【パーツ】範囲'],
+            ['/manual/template/pict', '【パーツ】写真'],
+            ['/manual/template/sign', '【パーツ】署名'],
+            ['/manual/template/canvas', '【パーツ】手書き'],
+            ['/manual/template/table', '【パーツ】表'],
           ]
         }
       ],
