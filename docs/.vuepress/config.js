@@ -25,7 +25,7 @@ module.exports = {
     }]
   ],
   themeConfig: {
-    lastUpdated: 'Last Updated',
+    lastUpdated: '更新日',
     smoothScroll: true,
     nav: [
       { text: 'Home', link: '/' },
@@ -34,7 +34,33 @@ module.exports = {
       { text: '操作ガイド', link: '/manual/quickstart' },
       { text: 'セキュリティ', link: '/security/' },
       { text: '規約等', link: '/rule/' },
-      { text: 'FAQ', link: '/faq/' }
+      { text: 'FAQ', link: '/faq/' },
+      {
+        text: 'その他',
+        ariaLabel: 'Learn More',
+        items: [
+          {
+            text: '開発者ブログ',
+            items: [
+              { text: 'FAQ', link: '/faq/' },
+              { text: 'お問い合わせ', link: '/inquery/' },
+            ]
+          },
+          {
+            text: 'Miscellaneous',
+            items: [
+              {
+                text: 'Migrate from 0.x',
+                link: '/miscellaneous/migration-guide.html'
+              },
+              {
+                text: 'Changelog',
+                link: 'https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md'
+              }
+            ]
+          }
+        ]
+      },
     ],
     sidebar: {
       '/price/': [
