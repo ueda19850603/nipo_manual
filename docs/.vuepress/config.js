@@ -25,6 +25,7 @@ module.exports = {
     }]
   ],
   themeConfig: {
+    lastUpdated: 'Last Updated',
     smoothScroll: true,
     nav: [
       { text: 'Home', link: '/' },
@@ -121,19 +122,54 @@ module.exports = {
       '/manual/': [
         {
           title: '初めての方へ',
+          collapsable: false,
+          sidebarDepth: 1,
+
           children: [
             ['/manual/quickstart', 'クイックスタートガイド']
           ]
         },
         {
-          title: '一般操作ガイド',
+          title: '日報の提出',
           children: [
-            ['/manual/quickstart', 'クイックスタートガイド']
+            ['/manual/report/write', '日報を書く'],
+            ['/manual/report/edit', '日報を修正する'],
+            ['/manual/report/remove', '日報を削除する'],
+          ]
+        },
+        {
+          title: '日報を受信',
+          children: [
+            ['/manual/res/res', '日報を受け取る'],
+            ['/manual/res/reaction', '承認・棄却・既読する'],
+            ['/manual/res/comment', '日報にコメントをする'],
+            ['/manual/res/search', '日報を検索する'],
+
+          ]
+        },
+        {
+          title: '日報を活用',
+          children: [
+            ['/manual/utility/pdf', '日報をPDFに変換'],
+            ['/manual/utility/analyze', '日報を分析（集計）'],
+          ]
+        },
+        {
+          title: 'グループの管理',
+          children: [
+            ['/manual/group/about', 'グループとは'],
+            ['/manual/group/plan', '無料と有料の切替え'],
+            ['/manual/group/addstaff', 'スタッフを追加'],
+            ['/manual/group/editstaff', 'スタッフの管理'],
+            ['/manual/group/rmstaff', 'スタッフを追放'],
           ]
         },
         {
           title: 'テンプレートについて',
           children: [
+            ['/manual/template/_make', 'テンプレートを作る'],
+            ['/manual/template/_edit', 'テンプレートを修正する'],
+            ['/manual/template/_remove', 'テンプレートを削除'],
             ['/manual/template/text', '【パーツ】1行テキスト'],
             ['/manual/template/zip', '【パーツ】郵便番号'],
             ['/manual/template/math', '【パーツ】数値'],
@@ -153,7 +189,20 @@ module.exports = {
             ['/manual/template/canvas', '【パーツ】手書き'],
             ['/manual/template/table', '【パーツ】表'],
           ]
-        }
+        },
+        {
+          title: 'カレンダー機能',
+          children: [
+            ['/manual/calendar/calendar', 'スタッフを追放'],
+          ]
+        },
+        {
+          title: 'タイムカード機能',
+          children: [
+            ['/manual/timecard/timecard', 'タイムカードについて'],
+            ['/manual/timecard/timecard', '編集の権限'],
+          ]
+        },
       ],
       '/faq/': [
         {
