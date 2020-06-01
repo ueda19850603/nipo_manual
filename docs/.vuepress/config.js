@@ -43,7 +43,7 @@ module.exports = {
             text: '開発者ブログ',
             items: [
               { text: 'FAQ', link: '/faq/' },
-              { text: 'お問い合わせ', link: '/inquery/' },
+              { text: 'お問い合わせ', link: '/inquery' },
             ]
           },
           {
