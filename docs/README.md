@@ -4,7 +4,7 @@ meta:
   - name: description
     content: 説明
 ---
-# クラウド日報 Nipo
+# クラウド日報 Nipo | テレワークにも最適です
 ![クラウド日報Nipo](/top.png)
 百聞は一見にしかず。まずNipoの操作画面イメージをご覧ください。
 ![クラウド日報Nipo](/topmovie.gif)
@@ -13,20 +13,14 @@ PCが苦手な方でも大丈夫。WordやExcelの日報よりはるかに簡単
 初心者が迷う「名前を付けて保存」なども不要です。  
 日報のテンプレートはお好みで自作できます。では、更に詳しく見てみましょう
 
-
+[[toc]]
 ## 報告書・日報・チェックシートなどを自由にカスタマイズ可能です
-っでええdddd
+![](/icatch/icatch1.png)
+Nipoは「テンプレートを作り、決まった周期で記入」するWebシステムです。  
+様々なパーツを組み合わせて、会社オリジナルの日報テンプレートを作れます。パーツには例えば「選択肢」や「手書き」「スライダー」など、１０種類以上もあります。  
+タイトルも忘れずに。「トラブル報告書」や「営業日誌」「機械点検シート」などなど。これだけで欲しかった独自の日報テンプレートの出来上がりです。  
+テンプレートは20種類（無料プランは3種類）保存可能です  
+<a href="/manual/template/_make.html" class="btn btn-primary">テンプレートについて詳しく</a>
 
-ｄさｆｄｓふぁｓ
-## サブタイトル 1-1---1-1-1-1
-ｄｓふぁｓふぁｓｆ
 
-### サブタイトル 1-2
-dd
-## タイトル 2
-ddd
-はろー
-ee
-eeee
-<Button label="おしてね" url="#" />
-[minimalistic static site generator](./about/about)) 
+### Badge <Badge text="beta" type="warning" /> <Badge text="default theme"/>

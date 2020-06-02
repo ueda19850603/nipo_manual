@@ -25,44 +25,51 @@ module.exports = {
     }]
   ],
   themeConfig: {
+    logo: '/logo.png',
     lastUpdated: '更新日',
     smoothScroll: true,
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'About', link: '/about/' },
       { text: '有料と無料の違い', link: '/price/' },
       { text: '操作ガイド', link: '/manual/quickstart' },
+      { text: '様々な使い方', link: '/idea/checksheet' },
       { text: 'セキュリティ', link: '/security/' },
-      { text: '規約等', link: '/rule/' },
       { text: 'FAQ', link: '/faq/' },
       {
         text: 'その他',
         ariaLabel: 'Learn More',
         items: [
           {
-            text: '開発者ブログ',
+            text: 'Nipoシステム',
             items: [
-              { text: 'FAQ', link: '/faq/' },
+              { text: '更新履歴', link: '/system/release-note' },
+              { text: 'バージョン確認', link: '/system/version' },
+              { text: '動作環境', link: '/system/require' },
               { text: 'お問い合わせ', link: '/inquery' },
             ]
           },
           {
-            text: 'Miscellaneous',
+            text: '規約等',
             items: [
-              {
-                text: 'Migrate from 0.x',
-                link: '/miscellaneous/migration-guide.html'
-              },
-              {
-                text: 'Changelog',
-                link: 'https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md'
-              }
+              { text: '利用規約', link: '/rule/agree'},
+              { text: 'プライバシーポリシー', link: '/rule/privacy'},
+              { text: '特定商取引に基づく表記', link: '/rule/business-deal'},
             ]
           }
         ]
       },
     ],
     sidebar: {
+      '/idea/': [
+        {
+          title: '様々な使い方を紹介',
+          children: [
+            ['/idea/checksheet', 'チェックシートとして使う'],
+            ['/idea/smartphone', 'スマホで日報を書く'],
+            ['/idea/tablet', 'タブレットで日報を書く'],
+            ['/idea/taxi', 'タクシー日報として使う']
+          ]
+        }
+      ],
       '/price/': [
         {
           title: '無料と有料の違い',
@@ -102,6 +109,15 @@ module.exports = {
             ['/price/penalty', '代金未払い時の対応（本当はこんな記事書きたくありません）'],
 
           ]
+        }
+      ],
+      '/system': [
+        {
+          title: 'システム関連',
+          children: [
+            ['/system/release-note', '更新履歴']
+          ]
+
         }
       ],
       '/about/': [
@@ -225,8 +241,8 @@ module.exports = {
         {
           title: 'タイムカード機能',
           children: [
-            ['/manual/timecard/timecard', 'タイムカードについて'],
-            ['/manual/timecard/timecard', '編集の権限'],
+            ['/manual/timecard/timecard', '初期設定'],
+            ['/manual/timecard/use', '日常の利用'],
           ]
         },
       ],
