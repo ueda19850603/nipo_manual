@@ -48,17 +48,39 @@ module.exports = {
             ]
           },
           {
+            text: 'News',
+            items: [
+              { text: '開発者ブログ', link: '/dev/' },
+              { text: 'お知らせ等', link: '/news/' },
+            ]
+          },
+          {
             text: '規約等',
             items: [
               { text: '利用規約', link: '/rule/agree'},
               { text: 'プライバシーポリシー', link: '/rule/privacy'},
               { text: '特定商取引に基づく表記', link: '/rule/business-deal'},
             ]
-          }
+          },
         ]
       },
     ],
     sidebar: {
+      '/news': [{
+        sidebarDepth: 1,
+        title: '記事一覧',
+        children: [
+         ['/news/telework', 'テレワーカーが使うテレワーク用ソフト3選'] 
+        ]
+      }],
+      '/dev/': [{
+        sidebarDepth: 1,
+        title: '記事一覧',
+        children: [
+          ['/dev/auth.md', 'FirebaseのE-mail認証でアドレスが正しいことを確認する'],
+          ['/dev/hhkb.md', 'HHKB Professional HYBRID Type-Sは最高のHHKB'],
+        ]
+      }],
       '/idea/': [
         {
           title: '様々な使い方を紹介',
