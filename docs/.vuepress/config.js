@@ -50,8 +50,9 @@ module.exports = {
           {
             text: 'News',
             items: [
+              { text: 'お知らせ', link: '/news/' },
+              { text: 'コラム', link: '/column/' },
               { text: '開発者ブログ', link: '/dev/' },
-              { text: 'お知らせ等', link: '/news/' },
             ]
           },
           {
@@ -71,6 +72,15 @@ module.exports = {
         title: '記事一覧',
         children: [
          ['/news/telework', 'テレワーカーが使うテレワーク用ソフト3選'] 
+        ]
+      }],
+      '/column': [{
+        sidebarDepth: 1,
+        title: 'コラム一覧',
+        children: [
+          ['/column/anotherapp', '日報アプリの比較5選と導入時に検討すべき2つの課題'],
+          ['/column/media', 'Nipoを掲載してくれたメディア様'],
+          ['/column/charactor', 'Nipo公式キャラクター'],
         ]
       }],
       '/dev/': [{
@@ -226,6 +236,26 @@ module.exports = {
             ['/manual/group/addstaff', 'スタッフを追加'],
             ['/manual/group/editstaff', 'スタッフの管理'],
             ['/manual/group/rmstaff', 'スタッフを追放'],
+          ]
+        },
+        {
+          title: '個人設定',
+          children: [
+            ['/manual/setting/about', '個人設定とは'],
+            ['/manual/setting/notification', 'E-mail通知'],
+            ['/manual/setting/box', '受信BOXの設定'],
+            ['/manual/setting/edit_name', 'ユーザ名の変更'],
+            ['/manual/setting/color_theme', 'カラーテーマ変更'],
+            ['/manual/setting/group_name', 'グループ名変更（一覧表示のみ）'],
+          ]
+        },
+        {
+          title: 'アカウントについて',
+          children: [
+            ['/manual/account/make', 'アカウントの作成'],
+            ['/manual/account/edit_mail', 'ログインE-mailの変更'],
+            ['/manual/account/edit_pw', 'パスワードの変更'],
+            ['/manual/account/revoke', 'アカウントの削除'],
           ]
         },
         {
