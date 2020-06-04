@@ -78,6 +78,7 @@ module.exports = {
         sidebarDepth: 1,
         title: 'コラム一覧',
         children: [
+          ['/column/csvsc', 'CSVの連結ツール'],
           ['/column/anotherapp', '日報アプリの比較5選と導入時に検討すべき2つの課題'],
           ['/column/media', 'Nipoを掲載してくれたメディア様'],
           ['/column/charactor', 'Nipo公式キャラクター'],
@@ -96,9 +97,12 @@ module.exports = {
           title: '様々な使い方を紹介',
           children: [
             ['/idea/checksheet', 'チェックシートとして使う'],
+            ['/idea/csv_export', '日報やチェックシートをエクセルで集計しよう'],
             ['/idea/smartphone', 'スマホで日報を書く'],
             ['/idea/tablet', 'タブレットで日報を書く'],
-            ['/idea/taxi', 'タクシー日報として使う']
+            ['/idea/taxi', 'タクシー日報として使う'],
+            ['/idea/self', '個人用日報として使う'],
+            ['/idea/field_work', '現地調査表として使う'],
           ]
         }
       ],
