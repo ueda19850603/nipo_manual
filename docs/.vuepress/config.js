@@ -20,8 +20,15 @@ module.exports = {
     ['@vuepress/back-to-top', true],
     ['@vuepress/last-updated', true],
     ['@vuepress/medium-zoom', true],
+    ['@vuepress/google-analytics', { 
+      'ga': '' // UA-00000000-0
+    }],
     ['@vuepress/search', {
       searchMaxSuggestions: 10
+    }],
+    ['sitemap', {
+      hostname: 'nipo.sndbox.jp',
+      changefreq: 'weekly'
     }]
   ],
   themeConfig: {
@@ -154,14 +161,6 @@ module.exports = {
             ['/system/release-note', '更新履歴']
           ]
 
-        }
-      ],
-      '/about/': [
-        {
-          title: 'taitoru',
-          children: [
-            ['/about/about', 'あばうと']
-          ]
         }
       ],
       '/rule/': [
