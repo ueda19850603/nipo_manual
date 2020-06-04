@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "niposite"
+  },
+  "targets": {
+    "nipo-77c25": {
+      "hosting": {
+        "niposite": [
+          "niposite"
+        ]
+      }
+    }
+  }
+}

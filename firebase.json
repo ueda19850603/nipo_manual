@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "niposite",
+    "public": "docs/.vuepress/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
