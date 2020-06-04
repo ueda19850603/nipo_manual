@@ -1,7 +1,7 @@
 module.exports = {
   base: '/',
   title: 'クラウド日報Nipo',
-  description: 'Just playing around',
+  description: '様々な報告書（トラブル報告・業務報告・チェックシート・etc...)をクラウドシステム化します。モバイル対応！集計や印刷も簡単',
   cache: true,
   locales: {
     '/': {
@@ -27,7 +27,7 @@ module.exports = {
       searchMaxSuggestions: 10
     }],
     ['sitemap', {
-      hostname: 'nipo.sndbox.jp',
+      hostname: 'https://nipo.sndbox.jp',
       changefreq: 'weekly'
     }]
   ],

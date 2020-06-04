@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>複数のCSVファイルを1つに結合するWebシステム | クラウド日報Nipo</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="様々な報告書（トラブル報告・業務報告・チェックシート・etc...)をクラウドシステム化します。モバイル対応！集計や印刷も簡単">
+    <meta name="keywords" content="クラウド,日報,nipo,業務報告書">
+    <meta name="og:title" content="クラウド日報Nipo">
+    <meta name="og:description" content="スマホやPCから日報作成">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="nipo.sndbox.jp">
+    <link rel="preload" href="/assets/css/0.styles.d708361b.css" as="style"><link rel="preload" href="/assets/js/app.d247a254.js" as="script"><link rel="preload" href="/assets/js/2.4ec5f2f7.js" as="script"><link rel="preload" href="/assets/js/13.35e750cf.js" as="script"><link rel="prefetch" href="/assets/js/10.0bdf0da4.js"><link rel="prefetch" href="/assets/js/100.dc638ac7.js"><link rel="prefetch" href="/assets/js/101.39d470ed.js"><link rel="prefetch" href="/assets/js/102.57609ca3.js"><link rel="prefetch" href="/assets/js/103.d2123db2.js"><link rel="prefetch" href="/assets/js/104.5956fdc6.js"><link rel="prefetch" href="/assets/js/105.4ac9c71b.js"><link rel="prefetch" href="/assets/js/106.1e51f2dd.js"><link rel="prefetch" href="/assets/js/107.6bdd9729.js"><link rel="prefetch" href="/assets/js/11.16a66da2.js"><link rel="prefetch" href="/assets/js/12.c631b529.js"><link rel="prefetch" href="/assets/js/14.9b5c66d2.js"><link rel="prefetch" href="/assets/js/15.abe2c9ff.js"><link rel="prefetch" href="/assets/js/16.0a3c6215.js"><link rel="prefetch" href="/assets/js/17.270dc9b9.js"><link rel="prefetch" href="/assets/js/18.9357a962.js"><link rel="prefetch" href="/assets/js/19.b1c85811.js"><link rel="prefetch" href="/assets/js/20.48068176.js"><link rel="prefetch" href="/assets/js/21.a7359eba.js"><link rel="prefetch" href="/assets/js/22.3de795e5.js"><link rel="prefetch" href="/assets/js/23.88908c06.js"><link rel="prefetch" href="/assets/js/24.5ecbaa81.js"><link rel="prefetch" href="/assets/js/25.be34c270.js"><link rel="prefetch" href="/assets/js/26.76a54eb4.js"><link rel="prefetch" href="/assets/js/27.761a7602.js"><link rel="prefetch" href="/assets/js/28.c3ac41be.js"><link rel="prefetch" href="/assets/js/29.59f358e8.js"><link rel="prefetch" href="/assets/js/3.e558eb77.js"><link rel="prefetch" href="/assets/js/30.5ff3f702.js"><link rel="prefetch" href="/assets/js/31.d4626c37.js"><link rel="prefetch" href="/assets/js/32.4ac1197c.js"><link rel="prefetch" href="/assets/js/33.be15e57f.js"><link rel="prefetch" href="/assets/js/34.1b8cbc44.js"><link rel="prefetch" href="/assets/js/35.b258e9e6.js"><link rel="prefetch" href="/assets/js/36.fd3ea333.js"><link rel="prefetch" href="/assets/js/37.f89951f0.js"><link rel="prefetch" href="/assets/js/38.8c490eac.js"><link rel="prefetch" href="/assets/js/39.abff2b18.js"><link rel="prefetch" href="/assets/js/4.4ca6f1e7.js"><link rel="prefetch" href="/assets/js/40.38930214.js"><link rel="prefetch" href="/assets/js/41.9784d26a.js"><link rel="prefetch" href="/assets/js/42.2c586d36.js"><link rel="prefetch" href="/assets/js/43.cb77088f.js"><link rel="prefetch" href="/assets/js/44.3e68c314.js"><link rel="prefetch" href="/assets/js/45.b2244d4f.js"><link rel="prefetch" href="/assets/js/46.9e13db5f.js"><link rel="prefetch" href="/assets/js/47.37bd0484.js"><link rel="prefetch" href="/assets/js/48.dbd76ad6.js"><link rel="prefetch" href="/assets/js/49.a2ce424c.js"><link rel="prefetch" href="/assets/js/5.a7b2eaec.js"><link rel="prefetch" href="/assets/js/50.82f787f6.js"><link rel="prefetch" href="/assets/js/51.e93ba066.js"><link rel="prefetch" href="/assets/js/52.2ff78e98.js"><link rel="prefetch" href="/assets/js/53.9c75ce0d.js"><link rel="prefetch" href="/assets/js/54.cc92ca0f.js"><link rel="prefetch" href="/assets/js/55.86ec6c9d.js"><link rel="prefetch" href="/assets/js/56.8e1a4057.js"><link rel="prefetch" href="/assets/js/57.a5182388.js"><link rel="prefetch" href="/assets/js/58.85358319.js"><link rel="prefetch" href="/assets/js/59.017ffd60.js"><link rel="prefetch" href="/assets/js/6.27d21e9e.js"><link rel="prefetch" href="/assets/js/60.5d677b2f.js"><link rel="prefetch" href="/assets/js/61.25d0bcb7.js"><link rel="prefetch" href="/assets/js/62.6a9be726.js"><link rel="prefetch" href="/assets/js/63.58f0cc95.js"><link rel="prefetch" href="/assets/js/64.89197b0e.js"><link rel="prefetch" href="/assets/js/65.37059483.js"><link rel="prefetch" href="/assets/js/66.187ce4ba.js"><link rel="prefetch" href="/assets/js/67.07d5972c.js"><link rel="prefetch" href="/assets/js/68.11c42d49.js"><link rel="prefetch" href="/assets/js/69.9ca297c1.js"><link rel="prefetch" href="/assets/js/7.28525d9f.js"><link rel="prefetch" href="/assets/js/70.bdff86e4.js"><link rel="prefetch" href="/assets/js/71.53f81244.js"><link rel="prefetch" href="/assets/js/72.7d131ed9.js"><link rel="prefetch" href="/assets/js/73.e2ed896e.js"><link rel="prefetch" href="/assets/js/74.0abd1015.js"><link rel="prefetch" href="/assets/js/75.21237d08.js"><link rel="prefetch" href="/assets/js/76.7779ce41.js"><link rel="prefetch" href="/assets/js/77.c9d46ad4.js"><link rel="prefetch" href="/assets/js/78.cb3578a8.js"><link rel="prefetch" href="/assets/js/79.8da3b561.js"><link rel="prefetch" href="/assets/js/8.52b51bb5.js"><link rel="prefetch" href="/assets/js/80.6eb98bb3.js"><link rel="prefetch" href="/assets/js/81.660ece0b.js"><link rel="prefetch" href="/assets/js/82.e05321b2.js"><link rel="prefetch" href="/assets/js/83.46bbb373.js"><link rel="prefetch" href="/assets/js/84.95c93704.js"><link rel="prefetch" href="/assets/js/85.86138b69.js"><link rel="prefetch" href="/assets/js/86.5589f2ae.js"><link rel="prefetch" href="/assets/js/87.852eeb33.js"><link rel="prefetch" href="/assets/js/88.249533dc.js"><link rel="prefetch" href="/assets/js/89.e06a349c.js"><link rel="prefetch" href="/assets/js/9.176e2404.js"><link rel="prefetch" href="/assets/js/90.9c8bbd5f.js"><link rel="prefetch" href="/assets/js/91.9f6cb349.js"><link rel="prefetch" href="/assets/js/92.b18cafa0.js"><link rel="prefetch" href="/assets/js/93.e9f27746.js"><link rel="prefetch" href="/assets/js/94.34835436.js"><link rel="prefetch" href="/assets/js/95.6f4d1afa.js"><link rel="prefetch" href="/assets/js/96.1c120223.js"><link rel="prefetch" href="/assets/js/97.066c7a23.js"><link rel="prefetch" href="/assets/js/98.5e7e41b7.js"><link rel="prefetch" href="/assets/js/99.ec50a7a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d708361b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="クラウド日報Nipo" class="logo"> <span class="site-name can-hide">クラウド日報Nipo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/price/" class="nav-link">
+  有料と無料の違い
+</a></div><div class="nav-item"><a href="/manual/quickstart.html" class="nav-link">
+  操作ガイド
+</a></div><div class="nav-item"><a href="/idea/checksheet.html" class="nav-link">
+  様々な使い方
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  セキュリティ
+</a></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn More" class="dropdown-title"><span class="title">その他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Nipoシステム
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/system/release-note.html" class="nav-link">
+  更新履歴
+</a></li><li class="dropdown-subitem"><a href="/system/version.html" class="nav-link">
+  バージョン確認
+</a></li><li class="dropdown-subitem"><a href="/system/require.html" class="nav-link">
+  動作環境
+</a></li><li class="dropdown-subitem"><a href="/inquery.html" class="nav-link">
+  お問い合わせ
+</a></li></ul></li><li class="dropdown-item"><h4>
+          News
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/news/" class="nav-link">
+  お知らせ
+</a></li><li class="dropdown-subitem"><a href="/column/" class="nav-link router-link-active">
+  コラム
+</a></li><li class="dropdown-subitem"><a href="/dev/" class="nav-link">
+  開発者ブログ
+</a></li></ul></li><li class="dropdown-item"><h4>
+          規約等
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/rule/agree.html" class="nav-link">
+  利用規約
+</a></li><li class="dropdown-subitem"><a href="/rule/privacy.html" class="nav-link">
+  プライバシーポリシー
+</a></li><li class="dropdown-subitem"><a href="/rule/business-deal.html" class="nav-link">
+  特定商取引に基づく表記
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/price/" class="nav-link">
+  有料と無料の違い
+</a></div><div class="nav-item"><a href="/manual/quickstart.html" class="nav-link">
+  操作ガイド
+</a></div><div class="nav-item"><a href="/idea/checksheet.html" class="nav-link">
+  様々な使い方
+</a></div><div class="nav-item"><a href="/security/" class="nav-link">
+  セキュリティ
+</a></div><div class="nav-item"><a href="/faq/" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn More" class="dropdown-title"><span class="title">その他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Nipoシステム
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/system/release-note.html" class="nav-link">
+  更新履歴
+</a></li><li class="dropdown-subitem"><a href="/system/version.html" class="nav-link">
+  バージョン確認
+</a></li><li class="dropdown-subitem"><a href="/system/require.html" class="nav-link">
+  動作環境
+</a></li><li class="dropdown-subitem"><a href="/inquery.html" class="nav-link">
+  お問い合わせ
+</a></li></ul></li><li class="dropdown-item"><h4>
+          News
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/news/" class="nav-link">
+  お知らせ
+</a></li><li class="dropdown-subitem"><a href="/column/" class="nav-link router-link-active">
+  コラム
+</a></li><li class="dropdown-subitem"><a href="/dev/" class="nav-link">
+  開発者ブログ
+</a></li></ul></li><li class="dropdown-item"><h4>
+          規約等
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/rule/agree.html" class="nav-link">
+  利用規約
+</a></li><li class="dropdown-subitem"><a href="/rule/privacy.html" class="nav-link">
+  プライバシーポリシー
+</a></li><li class="dropdown-subitem"><a href="/rule/business-deal.html" class="nav-link">
+  特定商取引に基づく表記
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>コラム一覧</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/column/csvsc.html" aria-current="page" class="active sidebar-link">CSVの連結ツール</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/column/csvsc.html#csvを連結するwebシステムはこちらです" class="sidebar-link">CSVを連結するWebシステムはこちらです</a></li><li class="sidebar-sub-header"><a href="/column/csvsc.html#csvとはカンマ区切りのことです" class="sidebar-link">CSVとはカンマ区切りのことです</a></li><li class="sidebar-sub-header"><a href="/column/csvsc.html#nipoで使える！複数グループのcsvデータを1つにまとめるツールです" class="sidebar-link">Nipoで使える！複数グループのCSVデータを1つにまとめるツールです</a></li><li class="sidebar-sub-header"><a href="/column/csvsc.html#csvscを起動する" class="sidebar-link">CSVSCを起動する</a></li></ul></li><li><a href="/column/anotherapp.html" class="sidebar-link">日報アプリの比較5選と導入時に検討すべき2つの課題</a></li><li><a href="/column/media.html" class="sidebar-link">Nipoを掲載してくれたメディア様</a></li><li><a href="/column/charactor.html" class="sidebar-link">Nipo公式キャラクター</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="複数のcsvファイルを1つに結合するwebシステム"><a href="#複数のcsvファイルを1つに結合するwebシステム" class="header-anchor">#</a> 複数のCSVファイルを1つに結合するWebシステム</h1> <p><img src="/column/c3-1.png" alt=""></p><div class="table-of-contents"><ul><li><a href="#csvを連結するwebシステムはこちらです">CSVを連結するWebシステムはこちらです</a></li><li><a href="#csvとはカンマ区切りのことです">CSVとはカンマ区切りのことです</a><ul><li><a href="#複数のcsvファイルを1つにまとめたい。でもプログラミングはできないし・・・">複数のCSVファイルを1つにまとめたい。でもプログラミングはできないし・・・</a></li><li><a href="#パンがないならケーキを作ればいいじゃない。">パンがないならケーキを作ればいいじゃない。</a></li><li><a href="#フィールドの並びを考慮する必要は無し">フィールドの並びを考慮する必要は無し</a></li><li><a href="#一方にしか存在しないフィールド名の場合">一方にしか存在しないフィールド名の場合</a></li><li><a href="#同じデータであればフィールド名を統一しよう">同じデータであればフィールド名を統一しよう</a></li><li><a href="#csvscはオープンソースです">CSVSCはオープンソースです</a></li></ul></li><li><a href="#nipoで使える！複数グループのcsvデータを1つにまとめるツールです">Nipoで使える！複数グループのCSVデータを1つにまとめるツールです</a><ul><li><a href="#csvscの特徴">CSVSCの特徴</a></li><li><a href="#how-to-use">How To Use</a></li></ul></li><li><a href="#csvscを起動する">CSVSCを起動する</a></li></ul></div><p></p> <h2 id="csvを連結するwebシステムはこちらです"><a href="#csvを連結するwebシステムはこちらです" class="header-anchor">#</a> CSVを連結するWebシステムはこちらです</h2> <p>ドラッグアンドドロップで簡単にCSVを連結できます。
+<a href="https://code.sndbox.jp/csvsc/#/" target="_blank" rel="noopener noreferrer">csvscを起動<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="csvとはカンマ区切りのことです"><a href="#csvとはカンマ区切りのことです" class="header-anchor">#</a> CSVとはカンマ区切りのことです</h2> <p>CSVは日本語で「カンマ区切り」と呼ばれる形式のテキストファイルです。各データ項目（フィールド）を,(カンマ）で区切り、1レコードを改行で区切るシンプルなファイルです。実際に書くとしたのようになります</p> <p>名前,性別,年齢
+上田,男,34
+武田,女,30
+橋本,男,23</p> <p>列方向も注目です。各行の1項目目には「名前」が来なければいけません。同様に2項目目は「性別」3項目目には年齢が入ります。縦列にきちんと整列されてなければ正しくデータを表現できません。</p> <p>エクセルなどの表計算ソフトでそのまま開くこともできます。CSVは何らかのシステムのデータを吐き出すのによく使われます。逆に、新規のシステムにデータを取り込むためにも使ったりしますね。ようは「システム同士の粘着シール」みたいな役割を持っています。</p> <h3 id="複数のcsvファイルを1つにまとめたい。でもプログラミングはできないし・・・"><a href="#複数のcsvファイルを1つにまとめたい。でもプログラミングはできないし・・・" class="header-anchor">#</a> 複数のCSVファイルを1つにまとめたい。でもプログラミングはできないし・・・</h3> <p><img src="/column/c3-2.png" alt="">
+CSVファイルはただのテキストファイルです。複数のCSVファイルを1つにまとめたい場合、AからBへ末尾や先頭にデータをコピペするだけで完結です。1点だけ注意するとすれば、名前,性別 のような項目見出し行は除外する必要があるということでしょう。</p> <p>たったこれだけのことでも、面倒だと思います。そこで調べてみると、簡単にCSVを1つにまとめる手順を紹介しているサイトをたくさん見かけます。しかしその多くは「コマンドプロンプト」や「パワーシェル」など、いわゆる「黒いあいつ」を使った手順によるものばかりでした。例えば「CSV　連結」で検索したときに出てくる上位3位は以下の通り</p> <ul><li><a href="https://rakuzanet.jp/tsv-csv-txt-combine.html" target="_blank" rel="noopener noreferrer">簡単に大量(複数)のtsv・csv・txtを一発で結合するたったひとつの方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://digimamalife.com/howto-merge-csv-files" target="_blank" rel="noopener noreferrer">CSVやTXTなど複数のファイルを結合してまとめる方法 Windowsのコマンドで簡単にできる！<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://excelkamiwaza.com/csvmerge.html" target="_blank" rel="noopener noreferrer">VBAでCSVファイルを結合（一つにまとめる）ツールを作成しました。<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p>真っ黒い画面は使いたくないし、そもそもフィールド名が一致しない場合、前述の通りCSVは正しいデータを表せないので、破綻します。</p> <h3 id="パンがないならケーキを作ればいいじゃない。"><a href="#パンがないならケーキを作ればいいじゃない。" class="header-anchor">#</a> パンがないならケーキを作ればいいじゃない。</h3> <p>色々探しても理想的なものに出会えないので、作りました。複数のCSVファイルを1つのCSVファイルに連結します。<br>
+必要なスキルは「マウスのドラッグ」だけです。所定のエリアにCSVファイルを複数ドラッグしてください。<br>
+あとは「ダウンロード」ボタンを押すだけで、ドラッグされたCSVの中身を連結したCSVファイルがダウンロードされます。</p> <h3 id="フィールドの並びを考慮する必要は無し"><a href="#フィールドの並びを考慮する必要は無し" class="header-anchor">#</a> フィールドの並びを考慮する必要は無し</h3> <p>複数のCSVファイルについて、各CSVファイルのフィールドの並び順は関係ありません。例えば</p> <p>A.csvの中身</p> <p>名前,性別,年齢
+上田,男,34</p> <p>B.csvの中身</p> <p>性別,年齢,名前
+女,22,れいこさん</p> <p>のようなデータの場合、</p> <p>名前,性別,年齢
+上田,男,34
+れいこさん,女,22</p> <p>という結果のCSVファイルが吐き出されます。なお、フィールドの並びは「名前順」です。</p> <h3 id="一方にしか存在しないフィールド名の場合"><a href="#一方にしか存在しないフィールド名の場合" class="header-anchor">#</a> 一方にしか存在しないフィールド名の場合</h3> <p>例えばA.csvが</p> <p>名前,性別,年齢,住所
+上田,男,34,栃木</p> <p>B.csvが</p> <p>性別,年齢,名前,電話番号
+女,22,れいこさん,000-0000-0000</p> <p>の場合はどうなるでしょう？これは次のようになります</p> <p>名前,性別,年齢,住所,電話番号
+上田,男,34,栃木,
+れいこさん,女,22,,000-0000-0000</p> <p>なんとなく想像できる挙動だと思います。ようは、あまり細かいことを気にせず、連結してくれるものです。</p> <h3 id="同じデータであればフィールド名を統一しよう"><a href="#同じデータであればフィールド名を統一しよう" class="header-anchor">#</a> 同じデータであればフィールド名を統一しよう</h3> <p>以上の仕組みから、フィールド名が1文字でも違うと別の列に書き出されてしまいます。「名前」と「なまえ」は別フィールドとして吐き出されるので、前もってわかっている場合は、フィールド名を手直ししておいた方がきっと幸せになれます。</p> <h3 id="csvscはオープンソースです"><a href="#csvscはオープンソースです" class="header-anchor">#</a> CSVSCはオープンソースです</h3> <p>本当に大したプログラムじゃないんですが、CSVSCはオープンソースです。<a href="https://github.com/ueda19850603/csvsc" target="_blank" rel="noopener noreferrer">Github<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>に載せています。それとCSVの連結の過程において、データをサーバに転送することは一切行っていません。実は連結の仕事をしているのはあなたのブラウザ自身です。合同会社サンドボックスのサーバはただそのプログラムをホスティングしているだけです。だからデリケートなデータであっても、ご安心ください。</p> <h2 id="nipoで使える！複数グループのcsvデータを1つにまとめるツールです"><a href="#nipoで使える！複数グループのcsvデータを1つにまとめるツールです" class="header-anchor">#</a> Nipoで使える！複数グループのCSVデータを1つにまとめるツールです</h2> <p>CSVSCは複数のCSVファイルを、1枚のCSVファイルに連結するWebアプリです。もともと、Nipoのために作成しましたがCSVファイル全般でご利用になれます。</p> <p>CSVSCは複数のCSVファイルをドラッグ＆ドロップでセットし、「ダウンロード」ボタンをクリックすると1枚のCSVファイルに統合します。</p> <h3 id="csvscの特徴"><a href="#csvscの特徴" class="header-anchor">#</a> CSVSCの特徴</h3> <p>ドラッグ操作だけで複数のCSVファイルを1つのCSVファイルに変換できるCSV連結ソフトです。</p> <ul><li>ドラッグ&amp;ドロップでかんたん操作</li> <li>2件以上のCSVファイルを1つにまとめます</li> <li>各CSVファイルのフィールド名は、並び順が異なっていても大丈夫です
+(A.csvが[ 名前, 性別, 住所] B.csvが[ 性別, 住所, 名前]でもOK)</li> <li>一方にしか存在しないフィールドがある場合でも大丈夫です</li> <li>基本的にUTF-8の文字コードしか想定していません。Shift-JISとは相性が悪いかも?</li> <li>オープンソースです</li></ul> <h3 id="how-to-use"><a href="#how-to-use" class="header-anchor">#</a> How To Use</h3> <p><img src="/column/c3-3.png" alt=""></p> <h2 id="csvscを起動する"><a href="#csvscを起動する" class="header-anchor">#</a> CSVSCを起動する</h2> <p>以下のリンクから起動できます。
+<a href="https://code.sndbox.jp/csvsc/#/" target="_blank" rel="noopener noreferrer">csvscを起動<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新日:</span> <span class="time">2020-6-4 1:56:50 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/column/anotherapp.html">
+        日報アプリの比較5選と導入時に検討すべき2つの課題
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.d247a254.js" defer></script><script src="/assets/js/2.4ec5f2f7.js" defer></script><script src="/assets/js/13.35e750cf.js" defer></script>
+  </body>
+</html>
