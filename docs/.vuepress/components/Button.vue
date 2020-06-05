@@ -15,7 +15,7 @@ export default {
     label: {
       type: String,
       required: false,
-      default: 'ボタン'
+      default: 'ãƒœã‚¿ãƒ³'
     }
   },
   methods: {

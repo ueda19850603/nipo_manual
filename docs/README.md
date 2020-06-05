@@ -1,17 +1,19 @@
 ---
 title: クラウド日報 Nipo
+prev: false
+next: /manual/quickstart
 meta:
   - name: description
     content: 様々な報告書（トラブル報告・業務報告・チェックシート・etc...)をクラウドシステム化します。モバイル対応！集計や印刷も簡単
 ---
 
-![クラウド日報Nipo](/top.png)
+![クラウド日報Nipo](/top.webp)
 # クラウド日報 Nipo | テレワークにも最適です
 
 
 百聞は一見にしかず。まずNipoの操作画面イメージをご覧ください。  
 
-![クラウド日報Nipo](/topmovie.gif)  
+![日報アプリの操作イメージ](/topmovie.gif)  
 
 日報のテンプレートがあり、そこへ業務報告を入力していくだけの、とってもシンプルな日報アプリです。  
 PCが苦手な方でも大丈夫。WordやExcelの日報よりはるかに簡単です。  
@@ -22,7 +24,7 @@ PCが苦手な方でも大丈夫。WordやExcelの日報よりはるかに簡単
 ![](/icatch/icatch1.png)  
 
 Nipoは「テンプレートを作り、決まった周期で記入」するWebシステムです。  
-様々なパーツを組み合わせて、会社オリジナルの日報テンプレートを作れます。パーツには例えば「選択肢」や「手書き」「スライダー」など、１０種類以上もあります。  
+様々なパーツを組み合わせて、会社オリジナルの日報テンプレートを作れます。パーツには例えば「[選択肢](/manual/template/select1)」や「[手書き](/manual/template/canvas)」「[スライダー](/manual/template/slide)」など、１０種類以上もあります。  
 タイトルも忘れずに。「トラブル報告書」や「営業日誌」「機械点検シート」などなど。これだけで欲しかった独自の日報テンプレートの出来上がりです。  
 テンプレートは20種類（無料プランは3種類）保存可能です  
 <Button label="テンプレートについて詳しく見る" url="/manual/template/_make.html" />
@@ -32,13 +34,14 @@ Nipoは「テンプレートを作り、決まった周期で記入」するWeb�
 ![](/icatch/icatch2.png)  
 
 唐突ですが「○○診断シート」ってやったことありますか？様々な設問に対してYes/NOや数値で回答するシートのことです。  
-Nipoではテンプレートを自由に設計できるため、「チェックシートアプリ」や「現地調査アプリ」「〇〇診断シート」といった使い方も可能です。  
+Nipoではテンプレートを自由に設計できるため、「[チェックシートアプリ](/idea/checksheet)」や「現地調査アプリ」「〇〇診断シート」といった使い方も可能です。  
 チェックシートでは特に
 
 - [選択肢（単回答）](/manual/template/select1)
 - [選択肢（複回答）](/manual/template/select2)
 - [チェックボックス](/manual/template/checkbox)
-- [署名](/manual/template/sign)
+- [署名](/manual/template/sign)  
+
 といったパーツが活躍できそうですね。  
 また、チェックシートや診断シートは設問が長くなる傾向があります。通常の日報テンプレートでは設問幅が短いため、設問幅を長くするチェックシートスタイルを有効にしておきましょう  
 １つのチェックシートに無理に詰め込むのではなく、用途に応じて複数のチェックシートを作成すると良いです。  
@@ -53,6 +56,11 @@ Nipoではテンプレートを自由に設計できるため、「チェック�
 日報をWebシステム化するメリットの１つがペーパーレス化です。
 PDF化された日報や点検表はA４用紙にキレイなレイアウトのまま印刷することができます。検印欄のオマケも付きます。
 PDFについては報告書と相性抜群です。Web版のNipoなら複数枚の日報を一括でPDF化することも可能です
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0xvZWSh3xjU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+※動画内で日報をPDF化して印刷しています。59秒あたりを御覧ください
 
 <Button label="PDFについて詳しく見る" url="/manual/utility/pdf.html" />
 
@@ -132,7 +140,3 @@ AndroidやiOSをお使いであれば、それぞれにNipo専用のアプリも
 
 <Button label="無料と有料の違いについて詳しく見る" url="/price/" />
 
-
-
-
-### Badge <Badge text="beta" type="warning" /> <Badge text="default theme"/>

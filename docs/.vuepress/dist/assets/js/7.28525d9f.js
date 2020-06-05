@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{464:function(t,n,e){"use strict";e.r(n);var s=e(25),r=Object(s.a)({},(function(){var t=this.$createElement;return(this._self._c||t)("a",{attrs:{href:"https://nipo.sndbox.jp/inquery"}},[this._v("【お問い合わせ】")])}),[],!1,null,null,null);n.default=r.exports}}]);

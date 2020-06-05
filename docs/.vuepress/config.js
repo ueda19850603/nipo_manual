@@ -290,7 +290,7 @@ module.exports = {
         {
           title: 'カレンダー機能',
           children: [
-            ['/manual/calendar/calendar', 'スタッフを追放'],
+            ['/manual/calendar/calendar', 'カレンダー'],
           ]
         },
         {

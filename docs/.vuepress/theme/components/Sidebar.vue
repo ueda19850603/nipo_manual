@@ -1,7 +1,9 @@
 <template>
   <aside class="sidebar">
+
     <NavLinks />
-    sidebarNipo
+    <ExeButton label="Nipoを起動する" url="https://nipoapp.sndbox.jp/" />
+    <br>
     <slot name="top" />
 
     <SidebarLinks
@@ -9,17 +11,25 @@
       :items="items"
     />
     <slot name="bottom" />
+    <div style="color:red">
+      <span style="font-weight:bold">Nipo公式サイト（リニューアル）です</span><br>一定期間は旧サイトと並行して運用し、将来はこのサイトに統一されます<br>
+      
+      <ExeButton label="旧サイトはこちら" url="https://nipo.sndbox.jp/" />
+
+    </div>
+
   </aside>
 </template>
 
 <script>
 import SidebarLinks from '@theme/components/SidebarLinks.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
+import ExeButton from '../../components/ExeButton.vue'
 
 export default {
   name: 'Sidebar',
 
-  components: { SidebarLinks, NavLinks },
+  components: { SidebarLinks, NavLinks, ExeButton },
 
   props: ['items']
 }
