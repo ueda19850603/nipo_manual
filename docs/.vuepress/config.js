@@ -85,6 +85,7 @@ module.exports = {
         sidebarDepth: 1,
         title: 'コラム一覧',
         children: [
+          ['/column/', 'コラムトップ'],
           ['/column/csvsc', 'CSVの連結ツール'],
           ['/column/anotherapp', '日報アプリの比較5選と導入時に検討すべき2つの課題'],
           ['/column/media', 'Nipoを掲載してくれたメディア様'],
@@ -117,12 +118,13 @@ module.exports = {
         {
           title: '無料と有料の違い',
           children: [
-            ['', '費用トップ']
+            ['', '無料と有料の違い']
           ]
         },
         {
           title: 'GOLD PLANに加入する',
           children: [
+            ['/price/goldplan_trial', 'GOLD PLANを無料で試す'],
             ['/price/invoice', '請求書払い'],
             ['/price/credit', 'クレジットカード'],
           ]
@@ -145,7 +147,6 @@ module.exports = {
         {
           title: 'その他',
           children: [
-            ['/price/goldplan_trial', 'GOLD PLANの試用'],
             ['/price/limit_break', '大人数で使うときのコツ'],
             ['/price/search_unlimit', '全文検索の制限解除について'],
             ['/price/timecard', 'タイムカードのオプション（売り切り）'],

@@ -1,8 +1,11 @@
 <template>
   <div style="margin: 20px; 0">
-    <label><input type="radio" v-model="radio" value="credit">1ヶ月自動更新でお申し込み(クレカ)</label><br>
-    <label><input type="radio" v-model="radio" value="month">３ヶ月でお申し込み(請求書)</label><br>
-    <label><input type="radio" v-model="radio" value="year">12ヶ月でお申し込み(請求書)</label>
+    <div style="border: 1px solid blue; padding: 10px;">
+       ▼選ぶと一覧表が変わります<br> 
+      <label><input type="radio" v-model="radio" value="credit">1ヶ月自動更新でお申し込み(クレカ)</label><br>
+      <label><input type="radio" v-model="radio" value="month">３ヶ月でお申し込み(請求書)</label><br>
+      <label><input type="radio" v-model="radio" value="year">12ヶ月でお申し込み(請求書)</label>
+    </div>
     <div v-if="radio === 'month'">
       <table style="width:100%">
         <caption>3ヶ月の場合の費用</caption>
