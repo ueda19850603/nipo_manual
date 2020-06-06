@@ -1,6 +1,6 @@
+# 日報をPDFへ変換できます。スマホからもOK<Badge text="GOLD限定" type="warning" />
 ![日報をPDFに変換する](/utility/icatch.png)
 
-# 日報をかんたんにPDFへ変換できます。スマホからも操作可能<Badge text="GOLD限定" type="warning" />
 Nipoの大きな特徴の1つにPDF変換があります。日報アプリで作成された日報をワンクリックでかんたんにPDFへ変換できます。  
 スマートフォンやタブレットからも直接変換可能です。PDF表示可能なアプリがあればそのまま表示もできます。
 
