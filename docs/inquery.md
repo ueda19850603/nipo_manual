@@ -1,11 +1,6 @@
-<form name="contact" method="POST" netlify>
-  <p>
-    <label>E-mail: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+# お問い合わせ
+
+現在このサイトにお問い合わせフォーム機能はありません。  
+近い将来実装の予定ですが、実装までは旧サイトの問い合わせフォームをご利用ください  
+[旧サイトの問い合わせフォームへ](https://nipo.sndbox.jp/inquery)  
+<Alice label="静的サイトジェネレータは問い合せフォームをどうするかが悩ましいところです。" />

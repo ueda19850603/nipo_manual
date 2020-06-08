@@ -29,7 +29,8 @@ module.exports = {
     ['sitemap', {
       hostname: 'https://nipo.sndbox.jp',
       changefreq: 'weekly'
-    }]
+    }],
+    ['img-lazy', true]
   ],
   themeConfig: {
     logo: '/logo.png',
