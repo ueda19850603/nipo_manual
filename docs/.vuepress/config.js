@@ -8,6 +8,9 @@ module.exports = {
       lang: 'ja'
     }
   },
+  markdown: {
+    anchor: { permalink: false },
+  },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['meta',{ name:"keywords", content:"クラウド,日報,nipo,業務報告書"}],
@@ -37,172 +40,16 @@ module.exports = {
     lastUpdated: '更新日',
     smoothScroll: true,
     nav: [
-      { text: '有料と無料の違い', link: '/price/' },
-      { text: '操作ガイド', link: '/manual/quickstart' },
-      { text: '様々な使い方', link: '/idea/checksheet' },
-      { text: 'セキュリティ', link: '/security/' },
-      { text: 'FAQ', link: '/faq/' },
-      {
-        text: 'その他',
-        ariaLabel: 'Learn More',
-        items: [
-          {
-            text: 'Nipoシステム',
-            items: [
-              { text: '更新履歴', link: '/system/release-note' },
-              { text: 'バージョン確認', link: '/system/version' },
-              { text: '動作環境', link: '/system/require' },
-              { text: 'お問い合わせ', link: '/inquery' },
-            ]
-          },
-          {
-            text: 'News',
-            items: [
-              { text: 'お知らせ', link: '/news/' },
-              { text: 'コラム', link: '/column/' },
-              { text: '開発者ブログ', link: '/dev/' },
-            ]
-          },
-          {
-            text: '規約等',
-            items: [
-              { text: '利用規約', link: '/rule/agree'},
-              { text: 'プライバシーポリシー', link: '/rule/privacy'},
-              { text: '特定商取引に基づく表記', link: '/rule/business-deal'},
-            ]
-          },
-        ]
-      },
+      { text: 'お問い合わせ', link: 'https://sndbox.jp/inquery' },
+      { text: 'Nipoを起動', link: 'https://nipoapp.sndbox.jp/' },
     ],
     sidebar: {
-      '/news': [{
-        sidebarDepth: 1,
-        title: '記事一覧',
-        children: [
-         ['/news/telework', 'テレワーカーが使うテレワーク用ソフト3選'] 
-        ]
-      }],
-      '/column': [{
-        sidebarDepth: 1,
-        title: 'コラム一覧',
-        children: [
-          ['/column/', 'コラムトップ'],
-          ['/column/csvsc', 'CSVの連結ツール'],
-          ['/column/anotherapp', '日報アプリの比較5選と導入時に検討すべき2つの課題'],
-          ['/column/media', 'Nipoを掲載してくれたメディア様'],
-          ['/column/charactor', 'Nipo公式キャラクター'],
-        ]
-      }],
-      '/dev/': [{
-        sidebarDepth: 1,
-        title: '記事一覧',
-        children: [
-          ['/dev/auth.md', 'FirebaseのE-mail認証でアドレスが正しいことを確認する'],
-          ['/dev/hhkb.md', 'HHKB Professional HYBRID Type-Sは最高のHHKB'],
-        ]
-      }],
-      '/idea/': [
-        {
-          title: '様々な使い方を紹介',
-          children: [
-            ['/idea/checksheet', 'チェックシートとして使う'],
-            ['/idea/csv_export', '日報やチェックシートをエクセルで集計しよう'],
-            ['/idea/smartphone', 'スマホで日報を書く'],
-            ['/idea/tablet', 'タブレットで日報を書く'],
-            ['/idea/taxi', 'タクシー日報として使う'],
-            ['/idea/self', '個人用日報として使う'],
-            ['/idea/field_work', '現地調査表として使う'],
-          ]
-        }
-      ],
-      '/price/': [
-        {
-          title: '無料と有料の違い',
-          children: [
-            ['', '無料と有料の違い']
-          ]
-        },
-        {
-          title: 'GOLD PLANに加入する',
-          children: [
-            ['/price/goldplan_trial', 'GOLD PLANを無料で試す'],
-            ['/price/invoice', '請求書払い'],
-            ['/price/credit', 'クレジットカード'],
-          ]
-        },
-        {
-          title: 'GOLD PLANを更新・変更する',
-          children: [
-            ['/price/credit_continue', 'GOLDPLANの更新(クレカ)'],
-            ['/price/invoice_continue', 'GOLDPLANの更新(請求書)'],
-          ]
-        },
-        {
-          title: 'GOLD PLANを辞める',
-          children: [
-            ['/price/credit_cancel', 'GOLD PLANの解約(クレカ)'],
-            ['/price/invoice_cancel', 'GOLD PLANの解約(請求書)'],
-            ['/price/cancel', '解約後の影響について'],
-          ]
-        },
-        {
-          title: 'その他',
-          children: [
-            ['/price/limit_break', '大人数で使うときのコツ'],
-            ['/price/search_unlimit', '全文検索の制限解除について'],
-            ['/price/timecard', 'タイムカードのオプション（売り切り）'],
-            ['/price/penalty', '代金未払い時の対応（本当はこんな記事書きたくありません）'],
-
-          ]
-        }
-      ],
-      '/system': [
-        {
-          title: 'システム関連',
-          children: [
-            ['/system/release-note', '更新履歴']
-          ]
-
-        }
-      ],
-      '/rule/': [
-        {
-          title: 'おやくそくごと',
-          children: [
-            ['/rule/agree', '利用規約'],
-            ['/rule/privacy', 'プライバシーポリシー'],
-            ['/rule/business-deal', '特定商取引法に基づく表記'],
-          ]
-        }
-      ],
-      '/security/': [
-        {
-          title: 'セキュリティについて',
-          children: [
-            ['/security/', 'readme'],
-            ['/security/security', 'Nipoのセキュリティ対策'],
-          ]
-        },
-        {
-          title: 'セキュリティFAQ',
-          children: [
-            ['/security/faq', 'セキュリティに対するよくある質問と答え'],
-            ['/security/guideline', 'セキュリティガイドライン']
-          ]
-        },
-        {
-          title: 'Nipoを安全に使うために',
-          children: [
-            ['/security/guideline', 'クラウドシステムを安全に使う'],
-            ['/security/guideline2', 'Nipoを安全に使う'],
-          ]
-        }
-      ],
       '/manual/': [
+        ['/','トップページへ'],
         {
           title: '初めての方へ',
-          collapsable: false,
-          sidebarDepth: 1,
+          collapsable: true,
+          sidebarDepth: 0,
 
           children: [
             ['/manual/quickstart', 'クイックスタートガイド']
@@ -303,27 +150,122 @@ module.exports = {
           ]
         },
       ],
-      '/faq/': [
+      // fallback
+      '/': [
+        ['/', 'トップページ'],
         {
-          title: 'FAQタイトル',
+          title: '様々な使い方を紹介',
           children: [
-            ['/faq/', 'よくある質問と答え edit'],
+            ['/idea/checksheet', 'チェックシートとして使う'],
+            ['/idea/csv_export', '日報をエクセルで集計する'],
+            ['/idea/smartphone', 'スマホで日報を書く'],
+            ['/idea/tablet', 'タブレットで日報を書く'],
+            ['/idea/taxi', 'タクシー日報として使う'],
+            ['/idea/self', '個人用日報として使う'],
+            ['/idea/field_work', '現地調査表として使う'],
           ]
         },
         {
-          title: 'トラブルシューティング',
+          sidebarDepth: 0,
+          title: 'マニュアル',
+          path: '/manual/quickstart',
+        },
+        
+        {
+          title: 'セキュリティ',
           children: [
+            ['/security/security', 'Nipoのセキュリティ対策'],
+            ['/security/faq', 'セキュリティに対する質問と答え'],
+            ['/security/guideline', 'クラウドシステムを安全に使う'],
+            ['/security/guideline2', 'Nipoを安全に使う'],
+          ]
+        },
+        {
+          title: 'FAQ',
+          children: [
+            ['/faq/', 'よくある質問と答え'],
             ['/faq/truble', 'トラブルについて']
           ]
+        },
+        
+        {
+          title: 'システム要項',
+          children: [
+            ['/system/release-note', 'Nipoの更新履歴'],
+            ['/system/version', 'バージョンの確認'],
+            ['/system/require', '動作環境'],
+            ['/inquery', 'お問い合わせ']
+          ]
+        },
+        {
+          title: '無料と有料の違い',
+          children: [
+            ['/price/', '無料と有料の違い'],
+            {
+              sidebarDepth: 0,
+              collapsable: false,
+              title: 'GOLD PLANについて',
+              children: [
+                ['/price/goldplan_trial', 'GOLD PLANを無料で試す'],
+                ['/price/invoice', 'GOLD PLANへ【請求書払い】'],
+                ['/price/invoice_continue', 'GOLDPLANの更新【請求書払い】'],
+                ['/price/invoice_cancel', 'GOLD PLANの解約【請求書払い】'],
+                ['/price/credit', 'GOLD PLANへ【クレカ】'],
+                ['/price/credit_continue', 'GOLDPLANの更新【クレカ】'],
+                ['/price/credit_cancel', 'GOLD PLANの解約【クレカ】'],
+                ['/price/cancel', '解約するとどうなる？'],
+              ]
+            },
+            {
+              sidebarDepth: 0,
+              collapsable: false,
+
+              title: 'その他',
+              children: [
+                ['/price/limit_break', '大人数で使うときのコツ'],
+                ['/price/search_unlimit', '全文検索の制限解除について'],
+                ['/price/timecard', 'タイムカードのオプション（売り切り）'],
+                ['/price/penalty', '代金未払い時の対応'],
+              ]
+            },
+          ]
+        },
+        
+        {
+          sidebarDepth: 0,
+          title: 'コラム一覧',
+          children: [
+            ['/column/csvsc', 'CSVの連結ツール'],
+            ['/column/anotherapp', 'Nipo以外の日報アプリ'],
+            ['/column/media', 'Nipoを掲載してくれたメディア様'],
+            ['/column/charactor', '公式キャラクターについて'],
+          ]
+        },
+        {
+          title: '規約など',
+          children: [
+            ['/rule/agree', '利用規約'],
+            ['/rule/privacy', 'プライバシーポリシー'],
+            ['/rule/business-deal', '特定商取引法に基づく表記'],
+          ]
+        },
+        {
+          sidebarDepth: 0,
+          title: '開発者ブログ',
+          children: [
+            ['/dev/auth.md', 'FirebaseのE-mail認証でアドレスが正しいことを確認する'],
+            ['/dev/hhkb.md', 'HHKB Professional HYBRID Type-Sは最高のHHKB'],
+          ]
+        },
+        {
+          sidebarDepth: 0,
+          title: 'お知らせ',
+          children: [
+            ['/news/telework', 'テレワーカーが使うテレワーク用ソフト3選'] 
+          ]
         }
-      ],
-      // fallback
-      '/': [
-        '/'
       ]
     },
-
-
-    sidebarDepth: 1
+    sidebarDepth: 0
   }
 }

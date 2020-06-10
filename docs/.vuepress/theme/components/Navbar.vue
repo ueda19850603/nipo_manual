@@ -1,5 +1,6 @@
 <template>
   <header class="navbar">
+
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
     <RouterLink
@@ -49,7 +50,7 @@ export default {
     SidebarButton,
     NavLinks,
     SearchBox,
-    AlgoliaSearchBox
+    AlgoliaSearchBox,
   },
 
   data () {

@@ -1,8 +1,9 @@
 <template>
   <aside class="sidebar">
+    <ToggleDarkMode/>
 
     <NavLinks />
-    <ExeButton label="Nipoを起動する" url="https://nipoapp.sndbox.jp/" />
+
     <br>
     <slot name="top" />
 
@@ -25,11 +26,12 @@
 import SidebarLinks from '@theme/components/SidebarLinks.vue'
 import NavLinks from '@theme/components/NavLinks.vue'
 import ExeButton from '../../components/ExeButton.vue'
+import ToggleDarkMode from '../../components/ToggleDarkMode.vue'
 
 export default {
   name: 'Sidebar',
 
-  components: { SidebarLinks, NavLinks, ExeButton },
+  components: { SidebarLinks, NavLinks, ExeButton, ToggleDarkMode },
 
   props: ['items']
 }

@@ -12,6 +12,7 @@
     v-else
     :href="link"
     class="nav-link external"
+    :class="{'accentBtn': item.text === 'Nipoを起動'}"
     :target="target"
     :rel="rel"
     @focusout="focusoutAction"
@@ -85,3 +86,19 @@ export default {
   }
 }
 </script>
+<style lang="stylus">
+.accentBtn
+  color: white !important
+  background: green !important
+  display: block;
+  width: 80%;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  transition: .4s;
+.accentBtn:hover
+  background: pink !important
+  border: 1px solid red
+</style>
