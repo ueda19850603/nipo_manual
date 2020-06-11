@@ -23,7 +23,7 @@ module.exports = {
   plugins: [
     ['@vuepress/back-to-top', true],
     ['@vuepress/last-updated', true],
-    ['@vuepress/medium-zoom', true],
+    ['@vuepress/medium-zoom', {}],
     ['@vuepress/google-analytics', { 
       'ga': '' // UA-00000000-0
     }],

@@ -42,6 +42,8 @@ methods: {
     display: block
     margin: 1em auto
 
+body.dark-mode .medium-zoom-overlay
+    background: #333 !important
 body.dark-mode
     background: #333
     h1,h2,h3,h4,h5,h6,p,li
