@@ -6,7 +6,7 @@ meta:
 ---
 
 # 名前は「アリス」です
-![Nipo公式キャラクター-アリス](/column/c2-1.png)
+![Nipo公式キャラクター-アリス](./column/c2-1.png)
 Nipo公式マスコットキャラクターです。無味乾燥なビジネスアプリですが、ホームページくらいは華やかにしたいものです。  
 このキャラクターのデザイナーさんは[ふにぐみさん](https://www.ac-illust.com/main/profile.php?id=0DbjwSb1&area=1)といいます。
 

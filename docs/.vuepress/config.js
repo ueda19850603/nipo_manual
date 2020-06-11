@@ -36,6 +36,13 @@ module.exports = {
     }],
     ['img-lazy', true]
   ],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@alias': '../image/icatch'
+      }
+    }
+  },
   themeConfig: {
     logo: '/logo.png',
     lastUpdated: '更新日',

@@ -28,7 +28,7 @@ Nipoのログインパスワードは、今の時代からすると制約が（�
 （E-mailは必ず受信できるアドレスを使用してください。E-mailが受信できず、パスワードも亡失した場合、アカウントの復旧は不可能になります）
 
 ## パスワードの再利用はダメっ！ゼッタイ
-![パスワードの再利用はダメ](/security/ipa1.jpg "IPA")
+![パスワードの再利用はダメ](./security/ipa1.jpg "IPA")
 
 画像出展：[独立行政法人IPA](https://www.ipa.go.jp/security/keihatsu/munekyun-pw/)
 

@@ -10,7 +10,7 @@ NipoのGOLD PLANをお申込みいただく前に、一度GOLD PLAN(Gift)を無�
 **GOLD PLAN(Gift)は20名まで**ご利用可能です。お申し込み後、一定期間GOLD PLANと同様にすべての機能が解除されご利用になれます。  
 GOLD PLAN(Gift)のお申し込みは次の図の通りです  
 
-![無料でGOLDPLANを体験してください](/price/price10.png)
+![無料でGOLDPLANを体験してください](./price/price10.png)
 「無料体験チケットを使う」をクリックすると、即時GOLD PLAN（Gift)が適用されます。このサービスは１つのグループに付き１回限りです。  
 GOLD PLAN(Gift)の有効期限は15日間です。この期間を過ぎると、自動で無料プランへ降格します
 

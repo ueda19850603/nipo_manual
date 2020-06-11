@@ -1,5 +1,5 @@
 # 手描きメモ<Badge text="GOLD限定" type="warning" />
-![手書きのメモを日報に添付する](/parts/canvas.png)
+![手書きのメモを日報に添付する](./template/canvas.png)
 iPadやSurfaceなどの、タッチパネルが使える場合に便利な項目です。
 
 シンプルですが、指でスラスラとイラストや文字が描けます。

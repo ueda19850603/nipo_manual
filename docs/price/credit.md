@@ -37,9 +37,9 @@ GOLD PLANには費用がかかります。お支払い方法は
 
 ## GOLD PLANの申込方法（クレジットカード）
 GOLD PLANを適用したいグループで操作してください。グループに入室後、「全体設定・グループ管理・請求書等でお支払い」をクリックします
-![GOLD PLAN申込画面](/price/price1.png)
+![GOLD PLAN申込画面](./price/price1.png)
 すると次の画面が表示されます。この画面ではGOLD PLANの申込期間とご利用人数を選択します
-![GOLD PLAN人数の選択画面](/price/price4.png)
+![GOLD PLAN人数の選択画面](./price/price4.png)
 
 ### 申込後即座にGOLD PLANが適用されます
 お申し込み完了から約20秒程度でグループがGOLD PLANに切り替わります。クレジットカードの場合はお支払いもこの時点で完了しています。

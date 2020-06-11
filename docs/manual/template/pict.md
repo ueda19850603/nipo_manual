@@ -1,5 +1,5 @@
 # 写真・画像<Badge text="GOLD限定" type="warning" />
-![写真を日報に添付する](/parts/pict.png)
+![写真を日報に添付する](./template/pict.png)
 
 タブレットやスマートフォンで撮影した画像を添付したり、PCに保存されている画像データを添付したりできます。対応ファイルはJpeg・Pngになります。
 

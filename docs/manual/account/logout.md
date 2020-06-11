@@ -2,9 +2,9 @@
 ![アカウントの設定-見出し](../../image/icatch/i11.png)
 
 ログアウトするには、まず画面右上にある「アカウントボタン」をクリックします
-![](/account/a8.png)
+![](./account/a8.png)
 ログアウトボタンをクリックします
-![](/account/a14.png)
+![](./account/a14.png)
 
 ログイン画面へ切り替われば、ログアウト成功です
-![](/account/a15.png)
+![](./account/a15.png)

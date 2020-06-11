@@ -70,8 +70,8 @@ GOLD PLANのお申し込みは、Web版からのみ行えます。Android版・i
 
 ## GOLD PLANの申込方法（請求書）
 GOLD PLANを適用したいグループで操作してください。グループに入室後、「全体設定・グループ管理・請求書等でお支払い」をクリックします
-![GOLD PLAN申込画面](/price/price1.png)
+![GOLD PLAN申込画面](./price/price1.png)
 すると次の画面が表示されます。この画面ではGOLD PLANの申込期間とご利用人数を選択します
-![GOLD PLAN人数の選択画面](/price/price2.png)
+![GOLD PLAN人数の選択画面](./price/price2.png)
 画面を下にスクロールします
-![お客様情報の入力](/price/price3.png)
+![お客様情報の入力](./price/price3.png)
