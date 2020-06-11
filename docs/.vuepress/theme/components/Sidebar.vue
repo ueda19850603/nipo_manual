@@ -13,7 +13,7 @@
     />
     <slot name="bottom" />
     <div style="color:red">
-      <span style="font-weight:bold">Nipo公式サイト（リニューアル）です</span><br>一定期間は旧サイトと並行して運用し、将来はこのサイトに統一されます<br>
+      <span style="font-weight:bold">Nipo公式サイト（試作）です</span><br>現在移管テスト中！<br>
       
       <ExeButton label="旧サイトはこちら" url="https://nipo.sndbox.jp/" />
 

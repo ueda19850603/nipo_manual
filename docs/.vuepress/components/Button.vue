@@ -1,6 +1,6 @@
 <template>
   <div style="text-align:center;margin: 50px 0px;">
-  <a :href="url" class="btn-gradient-3d-orange">{{ label }}</a>
+  <a :href="url" :target="target" class="btn-gradient-3d-orange">{{ label }}</a>
   </div>
 </template>
 
@@ -15,7 +15,12 @@ export default {
     label: {
       type: String,
       required: false,
-      default: 'ãƒœã‚¿ãƒ³'
+      default: 'Click me'
+    },
+    target: {
+      type: String,
+      required: false,
+      default: '_self'
     }
   },
   methods: {

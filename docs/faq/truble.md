@@ -39,7 +39,7 @@ Google Chormeを例にキャッシュクリアの手順をご紹介します
 お使いのブラウザで正常に動作しない場合は、ブラウザを変えてみます。
 NipoはInternet Explore以外のブラウザで動作しますので、お好みで変えてみてください。
 Nipoの開発は、Google Chormeで行われてます。よって最もおすすめのブラウザは[Google Chorme](https://www.google.co.jp/chrome/)です。
-[その他の推奨ブラウザ](https://nipo.sndbox.jp/rule/spec)はこちらに記載しております。
+[その他の推奨ブラウザ](/system/require)はこちらに記載しております。
 
 
 

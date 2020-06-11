@@ -50,6 +50,6 @@ iPhoneや、Androidスマートフォン向けに、Nipo専用のアプリを公
 日常業務はモバイルアプリのほうが便利ですが、モバイルアプリの立ち位置はあくまでも「子機」です。母体はWeb版のNipoであることを理解してください。   
 画面の小さいスマートフォンから、日報のテンプレートを作成するのは非常に効率が悪いです。テンプレート作成などの初期設定は、PCからWeb版のNipoを起動して予め作成しておきましょう。  
 スマートフォンアプリはお膳立てが済んでから導入してください。  
-[![Android版ダウンロード](/system/s2.png)](https://play.google.com/store/apps/details?id=jp.sndbox.nipoapp)
+[![Android版ダウンロード](../image/banner/b1.png)](https://play.google.com/store/apps/details?id=jp.sndbox.nipoapp)
 
-[![iOS版のダウンロード](/system/s3.png)](https://itunes.apple.com/us/app/nipo/id1385965600?l=ja&ls=1&mt=8)
+[![iOS版のダウンロード](../image/banner/b2.png)](https://itunes.apple.com/us/app/nipo/id1385965600?l=ja&ls=1&mt=8)

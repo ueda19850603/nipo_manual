@@ -17,7 +17,8 @@ module.exports = {
     ['meta',{ name:"og:title", content:"クラウド日報Nipo"}],
     ['meta',{ name:"og:description", content:"スマホやPCから日報作成"}],
     ['meta',{ name:"og:type", content:"website"}],
-    ['meta',{ name:"og:url", content:"nipo.sndbox.jp"}]
+    ['meta',{ name:"og:url", content:"https://nipo.sndbox.jp"}],
+    ['meta',{ name:"og:image", content: '/logo.png' }]
   ],
   plugins: [
     ['@vuepress/back-to-top', true],
@@ -46,6 +47,7 @@ module.exports = {
     sidebar: {
       '/manual/': [
         ['/','トップページへ'],
+        ['/idea/checksheet','様々な使い方を紹介'],
         {
           title: '初めての方へ',
           collapsable: true,
@@ -84,10 +86,10 @@ module.exports = {
           title: 'グループの管理',
           children: [
             ['/manual/group/about', 'グループとは'],
-            ['/manual/group/plan', '無料と有料の切替え'],
             ['/manual/group/addstaff', 'スタッフを追加'],
             ['/manual/group/editstaff', 'スタッフの管理'],
             ['/manual/group/rmstaff', 'スタッフを追放'],
+            ['/manual/group/plan', 'グループのプラン設定'],
           ]
         },
         {
@@ -149,6 +151,12 @@ module.exports = {
             ['/manual/timecard/use', '日常の利用'],
           ]
         },
+        ['/security/security','セキュリティ'],
+        ['/faq/','FAQ'],
+        ['/system/release-note','システム要項'],
+        ['/price/','無料と有料の違い'],
+        ['/column/csvsc','コラム'],
+        ['/rule/agree','規約など'],
       ],
       // fallback
       '/': [
@@ -194,7 +202,6 @@ module.exports = {
             ['/system/release-note', 'Nipoの更新履歴'],
             ['/system/version', 'バージョンの確認'],
             ['/system/require', '動作環境'],
-            ['/inquery', 'お問い合わせ']
           ]
         },
         {

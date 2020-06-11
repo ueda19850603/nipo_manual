@@ -1,5 +1,5 @@
-![タクシー日報をスマホで書く](/idea/icatch3.png)
 # iPadで日報を作成する
+![](../image/icatch/i6.png)
 [[toc]]
 ## iPadを使って日報を書く
 **「PCを使った日報が苦手」**  

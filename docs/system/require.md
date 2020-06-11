@@ -34,7 +34,8 @@ Nipoのすべての機能が最も使いやすい形で提供されています�
   - タブレットの場合は9インチ以上を推奨します。
 
 Android端末をご利用の方は、Webアプリ版の他、こちらのAndroid専用アプリを利用することも可能です  
-[![Android版ダウンロード](/system/s2.png)](https://play.google.com/store/apps/details?id=jp.sndbox.nipoapp)
+[![Android版ダウンロード](../image/banner/b1.png)](https://play.google.com/store/apps/details?id=jp.sndbox.nipoapp)
+
 ## iOSアプリ版
 - IOSバージョン
   - iOS9.0以上のiPhone / iPad
@@ -46,5 +47,4 @@ Android端末をご利用の方は、Webアプリ版の他、こちらのAndroid
 
 iPhone・iPadをご利用の方は、Webアプリ版の他、こちらのiOS専用アプリを利用することも可能です  
 Webアプリ版と比較して、一部の機能が利用できなくなっております  
-
-[![iOS版のダウンロード](/system/s3.png)](https://itunes.apple.com/us/app/nipo/id1385965600?l=ja&ls=1&mt=8)
+[![iOS版のダウンロード](../image/banner/b2.png)](https://itunes.apple.com/us/app/nipo/id1385965600?l=ja&ls=1&mt=8)

@@ -1,5 +1,6 @@
-![承認済みの日報](/res/icatch.png)
 # 検索<Badge text="GOLD限定" type="warning" />
+![アイキャッチ](../../image/icatch/i19.png)
+
 
 ## 提出簿から日報検索【日付・スタッフ指定】
 ![提出簿から日報を絞り込み検索](/res/r4.png)

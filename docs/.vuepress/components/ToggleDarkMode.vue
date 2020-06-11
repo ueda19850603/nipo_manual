@@ -44,13 +44,16 @@ methods: {
 
 body.dark-mode
     background: #333
-    h1,h2,h3,p
+    h1,h2,h3,h4,h5,h6,p,li
         color: #f1f1f1
+    .custom-block.tip .custom-block-title
     .custom-block.tip p,
+    .custom-block.tip li
     .says p
         color: #000
-    .custom-block.tip .custom-block-title
         color:#000
+    .custom-block.danger p
+        color: #990000
     header
         .dropdown-title
             color: white

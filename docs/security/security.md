@@ -10,7 +10,7 @@
 技術的な用語はできるだけ補足を加えながらわかりやすく解説していますが、疑問点などがございましたら遠慮なくお問い合わせ下さい
 
 ## 堅牢なFirebaseをインフラ基盤としている
-![FireBase](/security/fb.png)
+![FireBase](../image/icatch/fb.png)
 NipoのサーバはGoogle社の運営する[FireBase](https://firebase.google.com/)を利用しています。FireBase自体が堅牢なセキュリティをもっております。
 FireBaseは、Webアプリやスマートフォンアプリに特化したサーバという特徴があります。そのため、Webアプリに関するセキュリティリスクを大幅に軽減する仕組みが数多く提供されています。
 NipoはFirebaseのガイドラインに則り運営されており、これらの安全性を享受しています。以下で詳しくご紹介します
