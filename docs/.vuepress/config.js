@@ -10,6 +10,9 @@ module.exports = {
   },
   markdown: {
     anchor: { permalink: false },
+    config: md => {
+      md.use(require('markdown-it-video'))
+    }
   },
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
@@ -18,7 +21,8 @@ module.exports = {
     ['meta',{ name:"og:description", content:"スマホやPCから日報作成"}],
     ['meta',{ name:"og:type", content:"website"}],
     ['meta',{ name:"og:url", content:"https://nipo.sndbox.jp"}],
-    ['meta',{ name:"og:image", content: '/logo.png' }]
+    ['meta',{ name:"og:image", content: '/logo.png' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   ],
   plugins: [
     ['@vuepress/back-to-top', true],
@@ -212,9 +216,16 @@ module.exports = {
           ]
         },
         {
-          title: '無料と有料の違い',
+          title: '料金等について',
           children: [
-            ['/price/', '無料と有料の違い'],
+            {
+              sidebarDepth: 0,
+              collapsable: false,
+              title: '無料プランとGOLDプラン',
+              children: [
+                ['/price/', '無料と有料の違い'],
+              ]
+            },
             {
               sidebarDepth: 0,
               collapsable: false,

@@ -42,10 +42,18 @@ methods: {
     display: block
     margin: 1em auto
 
-body.dark-mode .medium-zoom-overlay
-    background: #333 !important
 body.dark-mode
     background: #333
+    table thead
+        background: pink
+    table tbody tr:nth-child(odd) td
+        background: black
+        color: white
+    table tbody tr:nth-child(even) td
+        background: #333
+        color: white
+    .medium-zoom-overlay
+        background: #333 !important
     h1,h2,h3,h4,h5,h6,p,li
         color: #f1f1f1
     .custom-block.tip .custom-block-title

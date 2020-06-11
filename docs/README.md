@@ -62,8 +62,13 @@ Nipoではテンプレートを自由に設計できるため、「[チェック
 PDF化された日報や点検表はA４用紙にキレイなレイアウトのまま印刷することができます。検印欄のオマケも付きます。
 PDFについては報告書と相性抜群です。Web版のNipoなら複数枚の日報を一括でPDF化することも可能です
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0xvZWSh3xjU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-block">
+    <iframe width="1000" height="720"
+      src="https://www.youtube.com/embed/0xvZWSh3xjU" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+</div>
 
 ※動画内で日報をPDF化して印刷しています。59秒あたりを御覧ください
 
@@ -71,7 +76,7 @@ PDFについては報告書と相性抜群です。Web版のNipoなら複数枚�
 
 
 ## 増え続ける営業報告書やチェックシートの集計もかんたんです。CSV出力もOK
-![日報を集計する](./image/icatch/i4.png)  
+![日報の集計](./image/icatch/i4.png)  
 
 Nipoの「集計四太郎」を使えば、「営業報告書」などの各種テンプレートに含まれる集計対象のデータをもとに集計ができます。  
 集計した結果はランキング形式で大きい順に順位付けされて表示されます。スタッフ同士の営業成績をひと目で把握できるため、エクセルなしでも十分に使えます。  
@@ -110,7 +115,7 @@ AndroidやiOSをお使いであれば、それぞれにNipo専用のアプリも
 
 
 ## タイムカード（勤怠報告）も日報で。集計だって簡単です
-![勤怠管理について](./image/icatch/i7.png)  
+![勤怠管理機能](./image/icatch/i7.png)  
 
 知っていましたか？日報を書く際に、「出勤時間」や「休憩時間」を書けば日報の報告にもなる上に、タイムカードの管理（出退勤の管理）もできるってこと。  
 時間の端数処理や休日出勤、深夜残業など基本的な集計も可能です。  

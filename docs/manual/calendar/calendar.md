@@ -1,4 +1,4 @@
-![dbg](../../image/icatch/i5.png)
+![日報をカレンダー上に表示する](../../image/icatch/i5.png)
 # 共有カレンダー<Badge text="一部GOLD限定" type="warning" />
 
 ## カレンダー上売上高を集計表示
