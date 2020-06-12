@@ -69,11 +69,13 @@ module.exports = {
           ]
         },
         {
-          title: '日報の提出',
+          title: '日報の作成と削除',
           children: [
             ['/manual/report/write', '日報を書く'],
+            ['/manual/report/draft', '下書きと自動保存'],
             ['/manual/report/edit', '日報を修正する'],
             ['/manual/report/remove', '日報を削除する'],
+            ['/manual/report/remove_all', '日報を一括削除する'],
           ]
         },
         {
@@ -89,7 +91,9 @@ module.exports = {
         {
           title: '日報を活用',
           children: [
-            ['/manual/utility/pdf', '日報をPDFに変換'],
+            ['/manual/utility/pdf', '日報をPDFに変換する'],
+            ['/manual/utility/pdf_setting', 'PDF変換の設定'],
+            ['/manual/utility/pdf_multi', '複数の日報を一括でPDF'],
             ['/manual/utility/analyze', '日報を分析（集計）'],
           ]
         },
@@ -97,10 +101,14 @@ module.exports = {
           title: 'グループの管理',
           children: [
             ['/manual/group/about', 'グループとは'],
-            ['/manual/group/addstaff', 'スタッフを追加'],
+            ['/manual/group/mode', 'グループのモード'],
+            ['/manual/group/addstaff', 'スタッフを新規追加'],
+            ['/manual/group/invite', '既存のスタッフを招待'],
             ['/manual/group/editstaff', 'スタッフの管理'],
             ['/manual/group/rmstaff', 'スタッフを追放'],
             ['/manual/group/plan', 'グループのプラン設定'],
+            ['/manual/group/leave', 'グループから脱退する'],
+            ['/manual/group/delete', 'グループの削除'],
           ]
         },
         {
@@ -112,6 +120,7 @@ module.exports = {
             ['/manual/setting/edit_name', 'ユーザ名の変更'],
             ['/manual/setting/color_theme', 'カラーテーマ変更'],
             ['/manual/setting/group_name', 'グループ名変更（一覧表示のみ）'],
+            ['/manual/group/leave', 'グループから脱退する'],
           ]
         },
         {
@@ -127,7 +136,9 @@ module.exports = {
         {
           title: 'テンプレートについて',
           children: [
+            ['/manual/template/_about', 'テンプレートとは？'],
             ['/manual/template/_make', 'テンプレートを作る'],
+            ['/manual/template/_import', '他のグループから取り込み'],
             ['/manual/template/_edit', 'テンプレートを修正する'],
             ['/manual/template/_remove', 'テンプレートを削除'],
             ['/manual/template/text', '【パーツ】1行テキスト'],
