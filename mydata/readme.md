@@ -1,3 +1,22 @@
 # 起動方法
-npm run docs
-yarnだとホットリロードが今動かない
+yarn run docs
+
+# ビルド
+yarn run docs:build
+
+
+# 今後の対応等
+Facebook App Id : 205367343587274
+
+タグマネージャ
+GTM-WT372NC
+AMP用タグマネージャ
+GTM-5VS2FZ4
+
+
+Google　Analytics
+UA-59474094-6
+
+
+Search console
+0rmql1p0TY2TbQ8a9ecJ04VvZXNx2rVlWGgT8QQK71k

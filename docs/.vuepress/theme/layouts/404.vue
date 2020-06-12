@@ -2,11 +2,12 @@
   <div class="theme-container">
     <div class="theme-default-content">
       <h1>404</h1>
+      <img src='/404.png' />
 
       <blockquote>{{ getMsg() }}</blockquote>
 
       <RouterLink to="/">
-        Take me home.
+        戻る
       </RouterLink>
     </div>
   </div>
@@ -14,10 +15,10 @@
 
 <script>
 const msgs = [
-  `There's nothing here.`,
-  `How did we get here?`,
-  `That's a Four-Oh-Four.`,
-  `Looks like we've got some broken links.`
+  `ごめんなさい、このページは無いんです`,
+  `このページは消滅してしまったようです`,
+  `残念ですが見つかりませんでした`,
+  `すみません。URLが間違っている可能性があります`
 ]
 
 export default {
