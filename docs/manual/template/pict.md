@@ -1,3 +1,9 @@
+---
+tags: ['テンプレート', 'パーツ', '写真', '画像', '絵']
+meta:
+  - name: description
+    content: 日報に写真を添付できます。PDFに変換するときに画像も組み込まれますが、CSV出力には対応していません
+---
 # 写真・画像<Badge text="GOLD限定" type="error" />
 ![写真を日報に添付する](./template/pict.png)
 

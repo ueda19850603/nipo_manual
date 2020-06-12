@@ -1,3 +1,9 @@
+---
+tags: ['検索', '全文検索' , 'search', '3ヶ月']
+meta:
+  - name: description
+    content: 単語にこだわらずすべての日報から一瞬で目的の日報を見つけることができます。超高速な検索機能
+---
 # 日報の検索<Badge text="GOLD限定" type="error" />
 ![アイキャッチ](../../image/icatch/i19.png)
 

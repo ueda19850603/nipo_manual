@@ -54,6 +54,19 @@
         →
       </span>
     </p>
+    <!-- cta ueda 追加 -->
+    <div class="cta-container">
+      <div class="cta-left center">
+        <img src="/logo.png" alt="CTA画像">
+      </div>
+      <div class="cta-right center">
+        <div class="cta-description">
+          <h3>気軽に始めよう</h3>
+          <p><a href="/manual/account/anonymouse.html">個人情報一切不要の匿名アカウント</a>で手軽に体験できます。そのまま正式アカウントへ昇格もOK。Nipoが使えないと思ったらブラウザを閉じるだけです</p>
+        </div>
+        <ExeButton label="Nipoを起動" url="https://nipoapp.sndbox.jp/" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -61,9 +74,12 @@
 import { resolvePage } from '../util'
 import isString from 'lodash/isString'
 import isNil from 'lodash/isNil'
+import ExeButton from '../../components/ExeButton.vue'
 
 export default {
   name: 'PageNav',
+  components: { ExeButton },
+
 
   props: ['sidebarItems'],
 
@@ -147,7 +163,8 @@ function flatten (items, res) {
 
 <style lang="stylus">
 @require '../styles/wrapper.styl'
-
+.cta
+  background: black
 .page-nav
   @extend $wrapper
   padding-top 1rem
@@ -160,4 +177,59 @@ function flatten (items, res) {
     overflow auto // clear float
   .next
     float right
+
+
+
+.cta-container
+  background-color: #555;/* CTA背景色 */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-top: 20px;
+
+  .center
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  img
+    width: 100%;
+    max-width: 100%!important;
+    height: auto!important;
+  .cta-left
+    position: relative;
+    width: calc(50% - 20px);
+    text-align: center;
+    margin-right: 20px;
+  .cta-right
+    color: #fff;
+    font-size: 16px;
+    width: 50%;
+  .cta-description
+    color: #fff
+    padding: 10px;
+    text-align: left;
+
+@media only screen and (max-width: 1023px) {
+  .cta-container {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cta-container {
+    display: block;
+    padding: 20px;
+  }
+  .cta-left {
+    display: none
+  }
+  .cta-container .cta-right {
+    width: 100% !important
+  }
+}
+
+
 </style>

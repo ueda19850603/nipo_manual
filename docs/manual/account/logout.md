@@ -1,3 +1,10 @@
+
+---
+tags: ['ログアウト', 'サインアウト', 'logout', 'signout']
+meta:
+  - name: description
+    content: ログアウトについて
+---
 # ログアウトする
 ![アカウントの設定-見出し](../../image/icatch/i11.png)
 

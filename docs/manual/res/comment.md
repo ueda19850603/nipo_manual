@@ -1,3 +1,9 @@
+---
+tags: ['コメント', 'comment','返信','スタンプ','絵文字']
+meta:
+  - name: description
+    content: 日報に対してコメントをつけることができます
+---
 # 日報にコメントを書く<Badge text="GOLD限定" type="error" />
 ![コメント](./res/r11.png)  
 

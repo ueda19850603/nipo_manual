@@ -1,3 +1,9 @@
+---
+tags: ['スタッフ追加', 'メンバー追加', 'ユーザ追加']
+meta:
+  - name: description
+    content: グループにスタッフを追加します。
+---
 # スタッフを追加する<Badge text="管理者向け" />
   
 ![グループ設定](../../image/icatch/i16.png)

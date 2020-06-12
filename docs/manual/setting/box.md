@@ -1,3 +1,9 @@
+---
+tags: ['受信BOX', '詳細ビュー', '日報の概要']
+meta:
+  - name: description
+    content: 日報の受信ボックスの表示形式を変更します
+---
 # 受信BOXの個人設定について
 
 ![個人設定の中にある受信BOXについて](./setting/s13.png)

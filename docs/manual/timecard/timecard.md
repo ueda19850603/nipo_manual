@@ -1,4 +1,9 @@
-
+---
+tags: ['タイムカード', '勤怠管理', '出勤簿', '打刻']
+meta:
+  - name: description
+    content: 日報の提出と同時にタイムカードの管理も可能になりました。
+---
 
 
 # タイムカード機能<Badge text="一部有料" type="warning" />

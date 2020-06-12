@@ -1,3 +1,9 @@
+---
+tags: ['カレンダー', 'calendar', '予定表', 'スケジューラ']
+meta:
+  - name: description
+    content: カレンダーを使って社員同士の予定を共有したり、カレンダー上から日報を読んだりすることが出来ます
+---
 # 共有カレンダー<Badge text="一部GOLD限定" type="warning" />
 
 ## カレンダー上売上高を集計表示
