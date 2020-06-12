@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>実際に動かしてイメージを確認できます</h3>
-    <div>▼選択肢を下のエリアに入力してみましょう。</div>
+    <div>▼選択肢を下のエリアに入力してみましょう。（１行につき１つの選択肢）</div>
     <textarea v-model="textarea" class="sampleTextArea" placeholder="add multiple lines" rows="7"></textarea>
     <div>▼こんな感じになる</div>
     <div v-for="(node, idx) in nodeC" :key="idx" style="padding-bottom:20px">

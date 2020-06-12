@@ -1,4 +1,4 @@
-# 手描きメモ<Badge text="GOLD限定" type="warning" />
+# 手描きメモ<Badge text="GOLD限定" type="error" />
 ![手書きのメモを日報に添付する](./template/canvas.png)
 iPadやSurfaceなどの、タッチパネルが使える場合に便利な項目です。
 

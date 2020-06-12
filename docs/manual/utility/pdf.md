@@ -1,4 +1,4 @@
-# 日報をPDFへ変換できます。スマホからもOK<Badge text="GOLD限定" type="warning" />
+# 日報をPDFへ変換できます。スマホからもOK<Badge text="GOLD限定" type="error" />
 ![日報をPDFへ変換する](../../image/icatch/i3.png)
 
 

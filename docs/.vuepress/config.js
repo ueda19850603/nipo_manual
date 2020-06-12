@@ -118,6 +118,7 @@ module.exports = {
           title: 'アカウントについて',
           children: [
             ['/manual/account/make', 'アカウントの作成'],
+            ['/manual/account/anonymouse', '匿名アカウントで使う'],
             ['/manual/account/edit_mail', 'ログインE-mailの変更'],
             ['/manual/account/edit_pw', 'パスワードの変更'],
             ['/manual/account/revoke', 'アカウントの削除'],

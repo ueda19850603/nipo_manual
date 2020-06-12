@@ -1,4 +1,4 @@
-# 検索<Badge text="GOLD限定" type="warning" />
+# 日報の検索<Badge text="GOLD限定" type="error" />
 ![アイキャッチ](../../image/icatch/i19.png)
 
 
