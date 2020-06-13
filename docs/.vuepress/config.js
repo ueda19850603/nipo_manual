@@ -23,17 +23,28 @@ module.exports = {
     ['meta',{ name:"og:url", content:"https://nipo.sndbox.jp"}],
     ['meta',{ name:"og:image", content: '/logo.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#027be3' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   plugins: [
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        message: "サイトがバックグラウンドで更新完了しました",
+        buttonText: "再読み込み"
+      }
+    }],
     ['@vuepress/back-to-top', true],
     ['@vuepress/last-updated', true],
     ['@vuepress/medium-zoom', {}],
-    ['@vuepress/google-analytics', { 
-      'ga': '' // UA-00000000-0
-    }],
-    ['@vuepress/search', {
-      searchMaxSuggestions: 10
-    }],
+    ['@vuepress/google-analytics', { 'ga': 'UA-59474094-6' }],
+    ['@vuepress/search', { searchMaxSuggestions: 10 }],
     ['sitemap', {
       hostname: 'https://nipo.sndbox.jp',
       changefreq: 'weekly'
@@ -306,6 +317,7 @@ module.exports = {
           sidebarDepth: 0,
           title: 'お知らせ',
           children: [
+            '/news/renew',
             ['/news/telework', 'テレワーカーが使うテレワーク用ソフト3選'] 
           ]
         }

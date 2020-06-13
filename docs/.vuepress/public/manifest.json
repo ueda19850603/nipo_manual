@@ -1,0 +1,21 @@
+{
+  "name": "クラウド日報 Nipo-ホームページ",
+  "short_name": "Nipo Website",
+  "description": "日報業務を効率UP",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#027be3",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
