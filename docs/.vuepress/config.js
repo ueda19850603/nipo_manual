@@ -38,7 +38,14 @@ module.exports = {
       hostname: 'https://nipo.sndbox.jp',
       changefreq: 'weekly'
     }],
-    ['img-lazy', true]
+    ['img-lazy', true],
+    [
+      'vuepress-plugin-canonical',
+      {
+        baseURL: 'https://nipo.sndbox.jp', // base url for your canonical link, optional, default: ''
+        stripExtension: false // strip '.html' , optional, default: false
+      }
+    ]
   ],
   configureWebpack: {
     resolve: {
@@ -50,7 +57,7 @@ module.exports = {
   themeConfig: {
     logo: '/logo.png',
     lastUpdated: '更新日',
-    smoothScroll: true,
+    smoothScroll: false,
     nav: [
       { text: 'お問い合わせ', link: 'https://sndbox.jp/inquery' },
       { text: 'Nipoを起動', link: 'https://nipoapp.sndbox.jp/' },
@@ -71,7 +78,8 @@ module.exports = {
         {
           title: '日報の作成と削除',
           children: [
-            ['/manual/report/write', '日報を書く'],
+            ['/manual/report/write', '日報本文を書く'],
+            ['/manual/report/dist', '日報の提出先を決めて提出'],
             ['/manual/report/draft', '下書きと自動保存'],
             ['/manual/report/edit', '日報を修正する'],
             ['/manual/report/remove', '日報を削除する'],
@@ -283,7 +291,7 @@ module.exports = {
           children: [
             ['/rule/agree', '利用規約'],
             ['/rule/privacy', 'プライバシーポリシー'],
-            ['/rule/business-deal', '特定商取引法に基づく表記'],
+            ['/rule/business-deal', '運営会社（特定商取引法表記）'],
           ]
         },
         {

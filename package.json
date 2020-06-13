@@ -18,11 +18,11 @@
     "vuepress": "^1.5.1",
     "watchpack": "1.7.2"
   },
-  "resolutions": {
-  },
+  "resolutions": {},
   "dependencies": {
     "axios": "^0.19.2",
     "sharp-cli": "^1.14.1",
+    "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-img-lazy": "^1.0.3",
     "vuepress-plugin-sitemap": "^2.3.1"
   }
