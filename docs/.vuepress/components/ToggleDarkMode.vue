@@ -62,7 +62,8 @@ body.dark-mode
     .says p
         color: #000
         color:#000
-    .custom-block.danger p
+    .custom-block.danger p,
+    .custom-block.danger li
         color: #990000
     header
         .dropdown-title

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background: #aaa; padding: 10px;" >
     <h3>実際に動かしてイメージを確認できます</h3>
     <div>▼選択肢を下のエリアに入力してみましょう。（１行につき１つの選択肢）</div>
     <textarea v-model="textarea" class="sampleTextArea" placeholder="add multiple lines" rows="7"></textarea>

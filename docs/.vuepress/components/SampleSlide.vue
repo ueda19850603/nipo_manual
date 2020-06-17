@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background: #aaa; padding: 10px;" >
     <h3>実際に動かしてイメージを確認できます</h3>
     <div>▼スライドの範囲と刻みを指定できます</div>
     最小値:<input v-model.number="min" type="number"><br>

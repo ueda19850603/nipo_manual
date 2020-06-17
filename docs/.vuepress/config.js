@@ -149,6 +149,7 @@ module.exports = {
             ['/manual/account/anonymouse', '匿名アカウントで使う'],
             ['/manual/account/edit_mail', 'ログインE-mailの変更'],
             ['/manual/account/edit_pw', 'パスワードの変更'],
+            ['/manual/account/reset_pw', 'パスワードを忘れた方'],
             ['/manual/account/revoke', 'アカウントの削除'],
           ]
         },
