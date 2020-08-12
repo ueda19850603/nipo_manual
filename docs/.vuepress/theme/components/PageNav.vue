@@ -67,6 +67,7 @@
         <ExeButton label="Nipoを起動" url="https://nipoapp.sndbox.jp/" />
       </div>
     </div>
+    <div style="color:#ccc;text-align:right;font-size:13px;">Version 1.0.1</div>
   </div>
 </template>
 

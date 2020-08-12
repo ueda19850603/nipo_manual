@@ -1,7 +1,7 @@
 module.exports = {
   base: '/',
   title: 'クラウド日報Nipo',
-  description: '様々な報告書（トラブル報告・業務報告・チェックシート・etc...)をクラウドシステム化します。モバイル対応！集計や印刷も簡単',
+  description: 'スマホで日報作成管理が可能。売上高の集計やPDF出力もかんたん。無料プランもあります',
   cache: true,
   locales: {
     '/': {
@@ -95,53 +95,69 @@ module.exports = {
     lastUpdated: '更新日',
     smoothScroll: false,
     nav: [
+      { text: '有料版と無料版', link: '/price/'},
+      { text: 'クイックスタートガイド', link: '/manual/quickstart'},
       { text: 'お問い合わせ', link: 'https://sndbox.jp/inquery' },
       { text: 'Nipoを起動', link: 'https://nipoapp.sndbox.jp/' },
     ],
     sidebar: {
-      '/manual/': [
-        ['/','トップページへ'],
-        ['/idea/checksheet','様々な使い方を紹介'],
+      // fallback
+      '/': [
+        ['/', 'トップページ'],
         {
-          title: '初めての方へ',
-          collapsable: true,
-          sidebarDepth: 0,
-
+          title: '様々な使い方を紹介',
           children: [
-            ['/manual/quickstart', 'クイックスタートガイド']
+            ['/idea/checksheet', 'チェックシートとして使う'],
+            ['/idea/csv_export', '日報をエクセルで集計する'],
+            ['/idea/smartphone', 'スマホで日報を書く'],
+            ['/idea/tablet', 'タブレットで日報を書く'],
+            ['/idea/taxi', 'タクシー日報として使う'],
+            ['/idea/self', '個人用日報として使う'],
+            ['/idea/field_work', '現地調査表として使う'],
           ]
         },
+        ['/manual/quickstart','クイックスタートガイド'],
         {
-          title: '日報の作成と削除',
+          title: '日報の管理',
           children: [
-            ['/manual/report/write', '日報本文を書く'],
-            ['/manual/report/dist', '日報の提出先を決めて提出'],
-            ['/manual/report/draft', '下書きと自動保存'],
-            ['/manual/report/edit', '日報を修正する'],
-            ['/manual/report/remove', '日報を削除する'],
-            ['/manual/report/remove_all', '日報を一括削除する'],
+            {
+              title: '日報の作成と削除',
+              sidebarDepth: 0,
+              collapsable: true,
+              children: [
+                ['/manual/report/write', '日報本文を書く'],
+                ['/manual/report/dist', '日報の提出先を決めて提出'],
+                ['/manual/report/draft', '下書きと自動保存'],
+                ['/manual/report/edit', '日報を修正する'],
+                ['/manual/report/remove', '日報を削除する'],
+                ['/manual/report/remove_all', '日報を一括削除する'],
+              ]
+            },
+            {
+              title: '日報を受け取る',
+              sidebarDepth: 0,
+              collapsable: true,
+              children: [
+                ['/manual/res/res', '日報を受け取る'],
+                ['/manual/res/reaction', '承認・棄却・既読する'],
+                ['/manual/res/tags', '日報にタグを付ける'],
+                ['/manual/res/comment', '日報にコメントをする'],
+                ['/manual/res/search', '日報を検索する'],
+              ]
+            },
+            {
+              title: '日報を活用',
+              children: [
+                ['/manual/utility/pdf', '日報をPDFに変換する'],
+                ['/manual/utility/pdf_setting', 'PDF変換の設定'],
+                ['/manual/utility/pdf_multi', '複数の日報を一括でPDF'],
+                ['/manual/utility/analyze', '日報を分析（集計）'],
+                ['/manual/utility/csv_export', '日報を一括でCSV出力'],
+              ]
+            },
           ]
         },
-        {
-          title: '日報を受信',
-          children: [
-            ['/manual/res/res', '日報を受け取る'],
-            ['/manual/res/reaction', '承認・棄却・既読する'],
-            ['/manual/res/tags', '日報にタグを付ける'],
-            ['/manual/res/comment', '日報にコメントをする'],
-            ['/manual/res/search', '日報を検索する'],
-
-          ]
-        },
-        {
-          title: '日報を活用',
-          children: [
-            ['/manual/utility/pdf', '日報をPDFに変換する'],
-            ['/manual/utility/pdf_setting', 'PDF変換の設定'],
-            ['/manual/utility/pdf_multi', '複数の日報を一括でPDF'],
-            ['/manual/utility/analyze', '日報を分析（集計）'],
-          ]
-        },
+        
         {
           title: 'グループの管理',
           children: [
@@ -180,76 +196,49 @@ module.exports = {
           ]
         },
         {
-          title: 'テンプレートについて',
+          title: '日報のテンプレート',
           children: [
-            ['/manual/template/_about', 'テンプレートとは？'],
-            ['/manual/template/_make', 'テンプレートを作る'],
+            ['/manual/template/_about', '日報テンプレートとは？'],
+            ['/manual/template/_make', '日報のテンプレートを作る'],
+            ['/manual/template/_category', 'テンプレートの分類'],
             ['/manual/template/_import', '他のグループから取り込み'],
-            ['/manual/template/_edit', 'テンプレートを修正する'],
-            ['/manual/template/_remove', 'テンプレートを削除'],
-            ['/manual/template/text', '【パーツ】1行テキスト'],
-            ['/manual/template/zip', '【パーツ】郵便番号'],
-            ['/manual/template/math', '【パーツ】数値'],
-            ['/manual/template/textarea', '【パーツ】複数行テキスト'],
-            ['/manual/template/date', '【パーツ】日付'],
-            ['/manual/template/time', '【パーツ】時刻'],
-            ['/manual/template/timecard', '【パーツ】タイムカード'],
-            ['/manual/template/select1', '【パーツ】選択肢（単答)'],
-            ['/manual/template/select2', '【パーツ】選択肢（複答）'],
-            ['/manual/template/dictionaly', '【パーツ】語録'],
-            ['/manual/template/checkbox', '【パーツ】チェックボックス'],
-            ['/manual/template/rate', '【パーツ】レート'],
-            ['/manual/template/slide', '【パーツ】スライダー'],
-            ['/manual/template/range', '【パーツ】範囲'],
-            ['/manual/template/pict', '【パーツ】写真'],
-            ['/manual/template/sign', '【パーツ】署名'],
-            ['/manual/template/canvas', '【パーツ】手書き'],
-            ['/manual/template/separator', '【パーツ】区切り'],
-            ['/manual/template/table', '【パーツ】表'],
+            ['/manual/template/_edit', '日報テンプレートを修正する'],
+            ['/manual/template/_remove', '日報テンプレートを削除'],
+            ['/manual/template/text', '1行テキスト【パーツ】'],
+            ['/manual/template/zip', '郵便番号【パーツ】'],
+            ['/manual/template/math', '数値【パーツ】'],
+            ['/manual/template/textarea', '複数行テキスト【パーツ】'],
+            ['/manual/template/date', '日付【パーツ】'],
+            ['/manual/template/time', '時刻【パーツ】'],
+            ['/manual/template/timecard', 'タイムカード【パーツ】'],
+            ['/manual/template/select1', '選択肢（単答)【パーツ】'],
+            ['/manual/template/select2', '選択肢（複答）【パーツ】'],
+            ['/manual/template/dictionaly', '語録【パーツ】'],
+            ['/manual/template/checkbox', 'チェックボックス【パーツ】'],
+            ['/manual/template/rate', 'レート【パーツ】'],
+            ['/manual/template/slide', 'スライダー【パーツ】'],
+            ['/manual/template/range', '範囲【パーツ】'],
+            ['/manual/template/pict', '画像・写真【パーツ】'],
+            ['/manual/template/sign', '署名【パーツ】'],
+            ['/manual/template/canvas', '手書き【パーツ】'],
+            ['/manual/template/separator', '区切り【パーツ】'],
+            ['/manual/template/table', '表【パーツ】'],
             ['/manual/template/guidearea', 'ガイドエリアについて'],
           ]
         },
         {
-          title: 'カレンダー機能',
+          title: 'ちょっと便利な機能',
           children: [
-            ['/manual/calendar/calendar', 'カレンダー'],
+            ['/manual/calendar/calendar', 'カレンダー機能'],
+            {
+              title: 'タイムカード機能',
+              children: [
+                ['/manual/timecard/timecard', '初期設定'],
+                ['/manual/timecard/use', '日常の利用'],
+              ]
+            },
           ]
         },
-        {
-          title: 'タイムカード機能',
-          children: [
-            ['/manual/timecard/timecard', '初期設定'],
-            ['/manual/timecard/use', '日常の利用'],
-          ]
-        },
-        ['/security/security','セキュリティ'],
-        ['/faq/','FAQ'],
-        ['/system/release-note','システム要項'],
-        ['/price/','無料と有料の違い'],
-        ['/column/csvsc','コラム'],
-        ['/rule/agree','規約など'],
-      ],
-      // fallback
-      '/': [
-        ['/', 'トップページ'],
-        {
-          title: '様々な使い方を紹介',
-          children: [
-            ['/idea/checksheet', 'チェックシートとして使う'],
-            ['/idea/csv_export', '日報をエクセルで集計する'],
-            ['/idea/smartphone', 'スマホで日報を書く'],
-            ['/idea/tablet', 'タブレットで日報を書く'],
-            ['/idea/taxi', 'タクシー日報として使う'],
-            ['/idea/self', '個人用日報として使う'],
-            ['/idea/field_work', '現地調査表として使う'],
-          ]
-        },
-        {
-          sidebarDepth: 0,
-          title: 'マニュアル',
-          path: '/manual/quickstart',
-        },
-        
         {
           title: 'セキュリティ',
           children: [
@@ -264,15 +253,6 @@ module.exports = {
           children: [
             ['/faq/', 'よくある質問と答え'],
             ['/faq/truble', 'トラブルについて']
-          ]
-        },
-        
-        {
-          title: 'システム要項',
-          children: [
-            ['/system/release-note', 'Nipoの更新履歴'],
-            ['/system/version', 'バージョンの確認'],
-            ['/system/require', '動作環境'],
           ]
         },
         {
@@ -324,22 +304,20 @@ module.exports = {
             ['/column/anotherapp', 'Nipo以外の日報アプリ'],
             ['/column/media', 'Nipoを掲載してくれたメディア様'],
             ['/column/charactor', '公式キャラクターについて'],
+            ['/dev/auth.md', 'FirebaseのE-mail認証でアドレスが正しいことを確認する'],
+            ['/dev/hhkb.md', 'HHKB Professional HYBRID Type-Sは最高のHHKB'],
           ]
         },
         {
-          title: '規約など',
+          title: 'システム要項・規約',
           children: [
+            ['/system/release-note', 'Nipoの更新履歴'],
+            ['/system/version', 'バージョンの確認'],
+            ['/system/require', '動作環境'],
+            ['/system/ios', 'iOSでNipoを使う'],
             ['/rule/agree', '利用規約'],
             ['/rule/privacy', 'プライバシーポリシー'],
             ['/rule/business-deal', '運営会社（特定商取引法表記）'],
-          ]
-        },
-        {
-          sidebarDepth: 0,
-          title: '開発者ブログ',
-          children: [
-            ['/dev/auth.md', 'FirebaseのE-mail認証でアドレスが正しいことを確認する'],
-            ['/dev/hhkb.md', 'HHKB Professional HYBRID Type-Sは最高のHHKB'],
           ]
         },
         {

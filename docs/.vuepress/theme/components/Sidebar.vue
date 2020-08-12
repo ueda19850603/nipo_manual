@@ -20,7 +20,7 @@
         <a href="https://play.google.com/store/apps/details?id=jp.sndbox.nipoapp" target="_blank"><img src="/b1.png" style="width:100%;" /></a>
       </div>
       <div class="myright">
-        <a href="https://itunes.apple.com/us/app/nipo/id1385965600?l=ja&ls=1&mt=8" target="_blank"><img src="/b2.png" style="width:100%;" /></a>
+        <a href="https://nipo.sndbox.jp/system/ios"><img src="/b2.png" style="width:100%;" /></a>
       </div>
     </div>
   </aside>
